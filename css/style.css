@@ -1,0 +1,639 @@
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
+    /* font-weight: 500; */
+    font-style: normal;
+  }
+
+  .titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .titillium-web-light {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .titillium-web-regular {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .titillium-web-semibold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .titillium-web-bold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .titillium-web-black {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .titillium-web-extralight-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .titillium-web-light-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .titillium-web-regular-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .titillium-web-semibold-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .titillium-web-bold-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }  
+
+
+
+  :root {
+    --pColor: #566b30;
+    --sColor: #32cd30;
+    --aColor: #8c4411;
+    --tColor: #fed801;
+    --textColor: #505050;
+    --light: #fff;
+    --dark: #000;
+    --bgLight: #F9FAFB;
+    --pFont: Questrial, sans-serif;
+    --sFont: Titillium Web, sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+  }
+  html {
+    /* border: 1px solid red; */
+    overflow-x: hidden;
+  }
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: var(--pFont);
+    color: var(--textColor);
+    background-color: var(--light);
+    font-weight: 400;
+    text-rendering: auto;
+    background-color: var(--bgLight);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .btn-accent {
+    background-color: var(--sColor);
+    color: var(--light);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+  .btn-accent:hover {
+    background-color: #1d971b;
+    color: var(--light);
+    border: 1px solid var(--sColor);
+  }
+
+  .title, .title.a {
+    font-family: var(--sFont);
+    font-weight: 700;
+    color: var(--dark);
+  }
+  
+  .title:not(.display-5){
+    font-size: 36px;
+  }
+
+
+  .title::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 70px;
+    background-color: var(--sColor);
+    margin-top: 10px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.font-secondary {
+  font-family: var(--sFont);
+}
+.font-secondary.p-color {
+  color: var(--pColor);
+}
+
+.s-color {
+  color: var(--sColor);
+}
+
+
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar.fixed-top {
+    /* border-bottom: 1px solid var(--sColor); */
+    background-color:#dbf9db4d !important;
+    backdrop-filter: blur(7px);
+  }
+
+  .navbar-collapse.show {
+    min-height: 100vh;
+  }
+
+  .navbar-brand img{
+    height: 40px;
+    width: auto;
+  }
+
+  .nav-item {
+    border-bottom: 2px solid #F8F9FA;
+    padding: 12px 0;
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+}
+
+  .nav-item:hover {
+    border-bottom: 2px solid var(--sColor);
+    color: var(--dark);
+  }
+
+  .nav-item .nav-link {
+    font-weight: 600;
+  }
+
+  .nav-item.dropdown .dropdown-menu{
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu{
+    margin-top: 15px;
+    display: block;
+  }
+
+  .dropdown-menu {
+    border-radius: 0 0 12px 12px;
+    -webkit-border-radius: 0 0 12px 12px;
+    -moz-border-radius: 0 0 12px 12px;
+    -ms-border-radius: 0 0 12px 12px;
+    -o-border-radius: 0 0 12px 12px;
+  }
+
+  .dropdown-menu .dropdown-item {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+  .dropdown-menu .dropdown-item:hover{
+    background-color: #d7f6d7;
+  }
+  
+  /* Banner */
+
+  .banner-wrapper {
+    background: url(../images/banner.jpg) no-repeat;
+    min-height: 75vh;
+    /* background-position: top right; */
+    /* background-size: cover; */
+  }
+  .banner{
+    height: 200px;
+  }
+  
+  .banner.two {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.052), rgba(0, 0, 0, 0.757)), 
+    url(../images/banner-2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .banner.canada {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.052), rgba(0, 0, 0, 0.757)), 
+    url(../images/canada-banner.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .banner.uk {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.052), rgba(0, 0, 0, 0.844)), 
+    url(../images/uk-banner.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .banner.usa {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.052), rgba(0, 0, 0, 0.757)), 
+    url(../images/usa-banner.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .banner.australia {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.052), rgba(0, 0, 0, 0.757)), 
+    url(../images/australia-banner.jpg);
+    background-attachment: fixed;
+  }
+
+  .banner.new-zealand {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.052), rgba(0, 0, 0, 0.757)), 
+    url(../images/new-zealand-banner.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .banner.ireland {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.052), rgba(0, 0, 0, 0.372)), 
+    url(../images/ireland-banner.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .banner-header {
+    font-family: var(--sFont);
+    font-weight: 700;
+    font-size: 45px;
+  }
+
+  .banner-form-overlay {
+    margin-top: -50px;
+  }
+
+  .banner-form-overlay .card {
+    box-shadow:  5px 5px 15px -3px #1018280e, 0 4px 6px -4px #1018281a;
+    border: none;
+  }
+
+  /* Study steps */
+  .study-step {
+    background-color: var(--bgLight);
+  }
+
+  .accordion-item{
+    border: 1px solid #8c441136;
+    overflow: hidden;
+    border-radius: 8px;
+    -webkit-border-radius: 8px  ;
+    -moz-border-radius: 8px  ;
+    -ms-border-radius: 8px  ;
+    -o-border-radius: 8px  ;
+}
+  
+
+  .accordion-item:not(:first-of-type) {
+    border-top: 1px solid #8c441136;
+}
+
+  .accordion-header, .accordion-header button{
+    color: var(--pColor) ;
+}
+
+  .accordion-button:not(.collapsed) {
+    color: var(--aColor);
+    background-color: #8c44110d;
+  }
+
+  /* WHY NEMCL */
+  
+
+  
+  
+
+  .why .card {
+    border: none;
+    box-shadow:  0 5px 15px 0 #0000000d;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+  .why .card:hover {
+    background-color: #f8fff8;
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+  .why .card-body i {
+    font-size: 40px;
+    color: var(--sColor);
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .card-body .card-title {
+    font-family: var(--sFont);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--dark);
+  }
+
+  /* Six Destination */
+
+  .six-destination .card-title {
+    color: var(--pColor);
+  }
+
+  .six-destination .card {
+    overflow: hidden;
+    box-shadow:  0 5px 15px 0 #0000000d;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.six-destination h3 {
+  font-family: var(--sFont);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--light);
+}
+
+.six-destination .position-relative .card-1 {
+  aspect-ratio: 1/1;
+  margin-left: 12px;
+  background-color: rgba(255, 255, 255, 0.918);
+  backdrop-filter: blur(2px) ;
+  opacity: 0;
+  border: 2px solid var(--sColor);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.six-destination .position-relative:hover .card-1 {
+  opacity: 1;
+}
+
+/* Consultation */
+.pricing .card {
+  border-color: var(--sColor);
+}
+
+.pricing .card-header {
+  background-color: var(--sColor);
+  color: white;
+}
+
+.pricing .card-body .btn {
+  border-color: var(--sColor);
+  color: var(--sColor);
+}
+
+.pricing .card-body .btn {
+  background-color: var(--sColor);
+  color: var(--light);
+}
+
+.pricing-2 .card {
+  border-color: var(--tColor);
+}
+
+.pricing-2 .card-header {
+  background-color: var(--tColor);
+  color: white;
+}
+
+.pricing-2 .card-body .btn {
+  border-color: var(--tColor);
+  color: var(--tColor);
+}
+
+.pricing-2 .card-body .btn {
+  background-color: var(--tColor);
+  color: var(--light);
+}
+
+.modal-footer {
+  border-top: 2px solid var(--sColor);
+}
+
+.pricing li {
+  margin-bottom: 5px;
+}
+.pricing li i{
+  margin-right: 5px;
+  font-size: 12px;
+  color: var(--sColor);
+}
+
+
+
+
+/* Study Content */
+.paragraph p {
+  /* text-align: justify; */
+  line-height: 150%;
+}
+
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature {
+  display: flex;
+  padding: 5px 30px;
+  width: 100%;
+}
+
+.feature-list .feature .icon {
+  width: 22px;
+  height: 22px;
+  margin: 0 auto;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  margin-right: 10px;
+}
+
+.feature-list .feature .icon i {
+  font-size: 14px;
+  color: var(--sColor);
+}
+
+.feature-list .feature strong {
+  color: var(--dark);
+}
+
+.feature-list .feature .text {
+  width: 100%;
+  line-height: 150%;
+}
+
+/* consultation-service book-now */
+
+.banner.canada-visitor-visa {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.052), rgba(0, 0, 0, 0.372)), 
+  url(../images/canada-visitor-visa.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.consultation-service.book-now {
+  background-color: var(--sColor);
+  color: var(--light);
+}
+
+.consultation-service.book-now h2 {
+  font-weight: 700;
+  font-family: var(--sFont);
+}
+
+.consultation-service.book-now a {
+  background-color: var(--tColor);
+  font-weight: 600;
+  color: var(--aColor);
+}
+
+/* Footer */
+footer {
+  background-color: var(--aColor);
+  color: var(--light);
+}
+
+footer .fa-facebook:hover {
+  color: #1877f2;
+}
+
+footer .fa-twitter:hover {
+  color: #1da1f2;
+}
+
+footer .fa-instagram:hover {
+  color: #dd2a7b;
+}
+
+footer .fa-whatsapp:hover {
+  color: #25d366;
+}
+
+footer .fa-youtube:hover {
+  color: red;
+}
+
+.address {
+  margin-bottom: 10px;
+}
+
+.address span {
+  color: var(--tColor);
+}
+
+
+
+.select2-selection.select2-selection--single{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .875rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 0px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 26px;
+  position: relative;
+  width: 20px;
+}
+
+.select2-container .select2-selection--single {
+  height: auto;
+}

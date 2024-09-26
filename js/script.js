@@ -20,8 +20,18 @@ $(document).ready(function() {
         placeholder: 'Select or enter a country...',
         allowClear: false
     });
-            
+    
+    $('.all-airports').select2({
+        placeholder: 'Select or enter an airport...',
+        allowClear: false
+    });
+
+    $('.all-cities').select2({
+        placeholder: 'Select or enter a city...',
+        allowClear: false
+    });
 });
+
 
 
 const allCountries = [

@@ -112,6 +112,22 @@
     text-decoration: none;
   }
 
+  -ms-input-placeholder, ::placeholder {
+    color: rgb(134, 133, 133) !important;
+    font-weight: 400 !important;
+    font-style: normal;
+    font-family: var(--pFont);
+}
+
+label {
+  color: var(--dark);
+}
+
+input {
+  color: var(--textColor);
+  border-color: #000;
+}
+
 
   .btn-accent {
     background-color: var(--sColor);

@@ -50,6 +50,10 @@
       iframe {
         height: 400px;
       }
+
+      .banner-reservation {
+        background-position: bottom center;
+      }
 }
 
 /* Large  devices (desktop, 992px and up) */

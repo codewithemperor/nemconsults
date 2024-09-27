@@ -20,6 +20,11 @@ $(document).ready(function() {
         placeholder: 'Select or enter a country...',
         allowClear: false
     });
+
+    $('.destination').select2({
+        placeholder: 'Select or enter a country...',
+        allowClear: false
+    });
     
     $('.all-airports').select2({
         placeholder: 'Select or enter an airport...',
@@ -233,9 +238,9 @@ const allCountries = [
 ];
 
 
-// Function to populate the select options dynamically
+// Function to populate the select options dynamically  
 function populateCountries() {
-    const countrySelect = $('#all-countries');
+    const countrySelect = $('.all-countries');
     allCountries.forEach(country => {
         const option = $('<option></option>').attr('value', country).text(country);
         countrySelect.append(option);
@@ -246,7 +251,6 @@ function populateCountries() {
 $(document).ready(function() {
     populateCountries();
 });
-
 
 const select = document.getElementById('select-destination');
 const currentDate = new Date();

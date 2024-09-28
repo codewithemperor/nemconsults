@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED">
-    <title>Nemconsults - Flight Itinerary</title>
+    <title>Nemconsults - Hotel Reservation</title>
     
     <!-- Favicon -->
      <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
@@ -181,69 +181,8 @@
                 <!-- Traveller Details ends-->
 
                 <div class="py-3"></div>
-                
-                <!-- Traveller Flight Details -->
-                <div class="p-4 align-items-center rounded-3 border shadow-lg mt-5" id="travellerFlight">
-                    <div class="col p-1 pb-4 p-lg-5 py-lg-4">
-                      <h1 class="title display-5">Tourist's Flight Details</h1>
-                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mt-3">
-                          
-  
-                          <div class="col">
-                              <label for="departureDate" class="form-label fw-bold fs-6">Departure Date*</label>
-                              <input type="date" class="form-control py-3" name="departureDate" required>
-                          </div>
-  
-                          <div class="col">
-                            <label for="departingCity" class="form-label fw-bold fs-6">Departing City/Airport*</label>
-                            <select name="departingCity" class="form-select all-airports py-3" required>
-                                <optgroup label="Airport/City">
-                                    <option value="" disabled selected></option>
-                                    <!-- Options will be populated by JavaScript -->
-                                </optgroup>
-                            </select>
-                        </div>
 
-                        <div class="col">
-                            <label for="returningDate" class="form-label fw-bold fs-6">Returning Date*</label>
-                            <input type="date" class="form-control py-3" name="returningDate" required>
-                        </div>
-
-                        <div class="col">
-                            <label for="returningCity" class="form-label fw-bold fs-6">Returning City/Airport*</label>
-                            <select name="returningCity" class="form-select all-airports py-3" required>
-                                <optgroup label="Airport/City">
-                                    <option value="" disabled selected></option>
-                                    <!-- Options will be populated by JavaScript -->
-                                </optgroup>
-                            </select>
-                        </div>
-
-                      </div>
-                     
-                    </div>
-                </div>
-                <!-- Traveller Flight Details ends-->
-
-                
                 <!-- Traveller Hotel Details -->
-                <div class="my-5 bg-body-secondary">
-                    <div class="p-3 py-5 p-md-5 d-flex flex-column justify-content-center align-items-center text-center">
-                        <p class="display-6 text-center fw-semibold mb-1 a-color">Do You Need A Hotel Reservation For Each Traveler As Well?</p>
-                        <p class="col-lg-8 text-center">Proof of accommodation is mandatory for Schengen visa. We take care of all bookings and cancellations for your visa application needs.</p>
-                        <div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="hotelBooking" id="hotelBookingYes" value="yes">
-                                <label class="form-check-label fw-semibold" for="hotelBookingYes">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="hotelBooking" id="hotelBookingNo" value="no" checked>
-                                <label class="form-check-label fw-semibold" for="hotelBookingNo">No</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
                 <div class="p-4 align-items-center rounded-3 border shadow-lg my-5" id="travellerHotel">
                     <div class="col p-1 pb-4 p-lg-5 py-lg-4">
                         <h1 class="title display-5">Tourist's Hotel Details</h1>
@@ -289,6 +228,66 @@
                     </div>
                 </div>
                 <!-- Traveller Hotel Details ends-->
+                
+                <!-- Traveller Flight Details -->
+                <div class="my-5 bg-body-secondary">
+                    <div class="p-3 py-5 p-md-5 d-flex flex-column justify-content-center align-items-center text-center">
+                        <p class="display-6 text-center fw-semibold mb-1 a-color">Do You Need A Flight Booking For Each Traveler As Well?</p>
+                        <p class="col-lg-8 text-center">Proof of flight reservation is mandatory for Schengen visa. We take care of all bookings and cancellations for your visa application needs.</p>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flightItinerary" id="flightItineraryYes" value="yes">
+                                <label class="form-check-label fw-semibold" for="flightItineraryYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flightItinerary" id="flightItineraryNo" value="no" checked>
+                                <label class="form-check-label fw-semibold" for="flightItineraryNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 align-items-center rounded-3 border shadow-lg mt-5" id="travellerFlight">
+                    <div class="col p-1 pb-4 p-lg-5 py-lg-4">
+                      <h1 class="title display-5">Tourist's Flight Details</h1>
+                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mt-3">
+                          
+  
+                          <div class="col">
+                              <label for="departureDate" class="form-label fw-bold fs-6">Departure Date*</label>
+                              <input type="date" class="form-control py-3" name="departureDate" required>
+                          </div>
+  
+                          <div class="col">
+                            <label for="departingCity" class="form-label fw-bold fs-6">Departing City/Airport*</label>
+                            <select name="departingCity" class="form-select all-airports py-3" required>
+                                <optgroup label="Airport/City">
+                                    <option value="" disabled selected></option>
+                                    <!-- Options will be populated by JavaScript -->
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                            <label for="returningDate" class="form-label fw-bold fs-6">Returning Date*</label>
+                            <input type="date" class="form-control py-3" name="returningDate" required>
+                        </div>
+
+                        <div class="col">
+                            <label for="returningCity" class="form-label fw-bold fs-6">Returning City/Airport*</label>
+                            <select name="returningCity" class="form-select all-airports py-3" required>
+                                <optgroup label="Airport/City">
+                                    <option value="" disabled selected></option>
+                                    <!-- Options will be populated by JavaScript -->
+                                </optgroup>
+                            </select>
+                        </div>
+
+                      </div>
+                     
+                    </div>
+                </div>
+                <!-- Traveller Flight Details ends-->
 
 
                 <!-- Traveller Insurance Details -->
@@ -413,9 +412,9 @@
             <div class="my-5 bg-black text-light p-4 py-5 p-md-5 d-flex flex-column justify-content-center align-items-center text-center order-summary">
                 <p class="display-3 title">Order Summary:</p>
                 <!-- Flight Price -->
-                <div class="price d-flex align-items-center justify-content-between col-12 col-md-11 p-2 py-3" data-label="Flight Itinerary">
-                    <p class="fs-5">Flight Itinerary</p>
-                    <p class="s-color fs-4">$15.00</p>
+                <div class="price d-flex align-items-center justify-content-between col-12 col-md-11 p-2 py-3" data-label="Hotel Reservation">
+                    <p class="fs-5">Hotel Reservation</p>
+                    <p class="s-color fs-4">$20.00</p>
                 </div>
                 <!-- Total Payment -->
                 <div class="price total-price d-flex align-items-center justify-content-between col-12 col-md-11 p-2 py-3 mt-3">
@@ -638,9 +637,9 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Elements
-            const hotelBookingRadios = document.querySelectorAll("input[name='hotelBooking']");
+            const flightItineraryRadios = document.querySelectorAll("input[name='flightItinerary']");
+            const flightDetailsSection = document.getElementById("travellerFlight");
             const insuranceBookingRadios = document.querySelectorAll("input[name='insuranceRadio']");
-            const hotelDetailsSection = document.getElementById("travellerHotel");
             const insuranceDetailsSection = document.getElementById("travellerInsurance");
             const orderSummary = document.querySelector(".order-summary");
     
@@ -650,11 +649,11 @@
             const insurancePrice = 20;
     
             // Initial setup - Hide hotel and insurance details if "No" is selected
-            hotelBookingRadios.forEach(radio => {
+            flightItineraryRadios.forEach(radio => {
                 if (radio.checked && radio.value === "no") {
-                    toggleVisibility(hotelDetailsSection, false);
+                    toggleVisibility(flightDetailsSection, false);
                 }
-                radio.addEventListener("change", handleHotelBookingChange);
+                radio.addEventListener("change", handleflightItineraryChange);
             });
     
             insuranceBookingRadios.forEach(radio => {
@@ -664,13 +663,13 @@
                 radio.addEventListener("change", handleInsuranceBookingChange);
             });
     
-            function handleHotelBookingChange(event) {
+            function handleflightItineraryChange(event) {
                 if (event.target.value === "yes") {
-                    toggleVisibility(hotelDetailsSection, true);
-                    addPriceToSummary("Hotel Reservation", hotelPrice);
+                    toggleVisibility(flightDetailsSection, true);
+                    addPriceToSummary("Flight Intinerary", flightPrice);
                 } else {
-                    toggleVisibility(hotelDetailsSection, false);
-                    removePriceFromSummary("Hotel Reservation");
+                    toggleVisibility(flightDetailsSection, false);
+                    removePriceFromSummary("Flight Intinerary");
                 }
                 updateTotalPrice();
             }
@@ -729,10 +728,13 @@
             }
     
             // Initial total price calculation
-            addPriceToSummary("Flight Itinerary", flightPrice); // Always add flight price at the beginning
+            addPriceToSummary("Hotel Reservation", hotelPrice); // Always add flight price at the beginning
             updateTotalPrice();
         });
         </script>
+    
+    
+    
     
 
 

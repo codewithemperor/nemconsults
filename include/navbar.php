@@ -15,9 +15,9 @@
                   <li><a class="dropdown-item p-3" href="study-in-canada.php">Study in Canada</a></li>
                   <li><a class="dropdown-item p-3" href="study-in-uk.php">Study in UK</a></li>
                   <li><a class="dropdown-item p-3" href="study-in-usa.php">Study in USA</a></li>
+                  <li><a class="dropdown-item p-3" href="study-in-europe.php">Study in Europe</a></li>
                   <li><a class="dropdown-item p-3" href="study-in-australia.php">Study in Australia</a></li>
                   <li><a class="dropdown-item p-3" href="study-in-newZealand.php">Study in New Zealand</a></li>
-                  <li><a class="dropdown-item p-3" href="study-in-europe.php">Study in Europe</a></li>
                 </ul>
             </li>
 

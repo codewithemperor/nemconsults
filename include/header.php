@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED">
-    <title>NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED</title>
+    <title><?php echo isset($pageTitle) ? $pageTitle : "NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED"; ?></title>
     
     <!-- Favicon -->
-     <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
     
     <!-- Select 2 -->

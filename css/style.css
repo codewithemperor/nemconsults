@@ -211,7 +211,7 @@ input {
   }
 
   .nav-item {
-    border-bottom: 2px solid #F8F9FA;
+    border-bottom: 2px solid transparent;
     padding: 12px 0;
     transition: all .1s ease;
     -webkit-transition: all .1s ease;

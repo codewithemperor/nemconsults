@@ -272,4 +272,108 @@ for (let year = currentYear; year <= currentYear + 5; year++) {
         // Stop adding options once 5 years from the current month have been covered
         if (year === currentYear + 5 && month === currentMonth - 1) break;
     }
+};
+
+let airportData = null; // Global variable to store fetched airports
+let cityData = null;    // Global variable to store fetched cities
+
+// Function to fetch airport data and store it in memory
+async function fetchAirportData() {
+    try {
+        const response = await fetch('https://cdn.jsdelivr.net/npm/airports-json@1.0.0/data/airports.json');
+        if (!response.ok) {
+            throw new Error("Error fetching airport data");
+        }
+        airportData = await response.json();
+        console.log("Airports data fetched successfully:", airportData);
+    } catch (error) {
+        console.error('Error fetching airport data:', error);
+    }
+}
+
+// Function to fetch city data and store it in memory
+async function fetchCityData() {
+    try {
+        const response = await fetch('https://nemconsults.com/cities-minified.json'); // Ensure this path is correct
+        if (!response.ok) {
+            throw new Error("Error fetching city data");
+        }
+        cityData = await response.json();
+        console.log("City data fetched successfully:", cityData);
+    } catch (error) {
+        console.error('Error fetching city data:', error);
+    }
+}
+
+// Function to populate the airport select fields with stored data
+function populateAirports() {
+    const selectElements = document.querySelectorAll('.all-airports');
+    if (!airportData) return; // If data isn't loaded yet, return early
+
+    selectElements.forEach(selectElement => {
+        selectElement.innerHTML = ''; // Clear existing options (including the loading placeholder)
+        const placeholderOption = document.createElement('option');
+        placeholderOption.textContent = 'Select an airport';
+        placeholderOption.disabled = true;
+        placeholderOption.selected = true;
+        selectElement.appendChild(placeholderOption); // Add a default 'Select an airport' option
+
+        airportData.filter(airport => airport.name).forEach(airport => {
+            const option = document.createElement('option');
+            option.value = airport.iata_code || airport.ident;
+            option.textContent = `${airport.name} - ${airport.municipality}, ${airport.iso_country} (${airport.iata_code})`;
+            selectElement.appendChild(option);
+        });
+    });
+}
+
+// Function to populate the city select fields with stored data
+function populateCities() {
+    const selectElements = document.querySelectorAll('.all-cities');
+    if (!cityData) return; // If data isn't loaded yet, return early
+
+    selectElements.forEach(selectElement => {
+        selectElement.innerHTML = ''; // Clear existing options (including the loading placeholder)
+        const placeholderOption = document.createElement('option');
+        placeholderOption.textContent = 'Select a city/country';
+        placeholderOption.disabled = true;
+        placeholderOption.selected = true;
+        selectElement.appendChild(placeholderOption); // Add a default 'Select a city' option
+
+        cityData.forEach(city => {
+            const option = document.createElement('option');
+            option.value = city.geonameid; // Use geonameid as value or adjust to your needs
+            option.textContent = `${city.name}, ${city.subcountry}, ${city.country}`;
+            selectElement.appendChild(option);
+        });
+    });
+}
+
+// Call the function to populate the airports and cities when the page loads
+document.addEventListener('DOMContentLoaded', async () => {
+    // Show placeholders immediately on page load
+    populatePlaceholders(); 
+
+    // Fetch both airport and city data in parallel
+    await Promise.all([fetchAirportData(), fetchCityData()]);
+
+    // Populate dropdowns after the data is loaded
+    populateAirports();
+    populateCities();
+});
+
+// Function to populate placeholders while loading
+function populatePlaceholders() {
+    const airportSelects = document.querySelectorAll('.all-airports');
+    const citySelects = document.querySelectorAll('.all-cities');
+        
+    // Set loading placeholders for airport select elements
+    airportSelects.forEach(selectElement => {
+        selectElement.innerHTML = '<option disabled selected>Please wait, loading...</option>';
+    });
+
+    // Set loading placeholders for city select elements
+    citySelects.forEach(selectElement => {
+        selectElement.innerHTML = '<option disabled selected>Please wait, loading...</option>';
+    });
 }

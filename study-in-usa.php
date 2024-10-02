@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED">
-    <title>Nemconsults - Study in Australia</title>
-
-    <!-- Select 2 -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Nemconsults - Study in USA</title>
     
     <!-- Favicon -->
      <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 pt-2" aria-label="Fifth navbar example" >
         <div class="container-fluid px-lg-4">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="images/logo-transparent.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,26 +52,26 @@
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Study Abroad</a>
                     <ul class="dropdown-menu p-lg-3">
-                      <li><a class="dropdown-item p-3" href="study-in-canada.html">Study in Canada</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-uk.html">Study in UK</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-usa.html">Study in USA</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-australia.html">Study in Australia</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-newZealand.html">Study in New Zealand</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-europe.html">Study in Europe</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-canada.php">Study in Canada</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-uk.php">Study in UK</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-usa.php">Study in USA</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-australia.php">Study in Australia</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-newZealand.php">Study in New Zealand</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-europe.php">Study in Europe</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Consultation services</a>
                     <ul class="dropdown-menu p-lg-3">
-                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.html">Canadian Visitor Visa</a></li>
-                    <li><a class="dropdown-item p-3" href="canada-work-permit.html">Canada Work Permit</a></li>
-                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.html">Immigrate to Canada</a></li>
-                    <li><a class="dropdown-item p-3" href="express-entry.html">Express Entry</a></li>
-                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.html">Pronvicial Nominee Program (PNP)</a></li>
-                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.html">Atlantic Immigration Program (AIP)</a></li>
-                    <li><a class="dropdown-item p-3" href="sponsorship.html">Sponsorship</a></li>
-                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.html">Canadian Citizenship Immigration</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.php">Canadian Visitor Visa</a></li>
+                    <li><a class="dropdown-item p-3" href="canada-work-permit.php">Canada Work Permit</a></li>
+                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.php">Immigrate to Canada</a></li>
+                    <li><a class="dropdown-item p-3" href="express-entry.php">Express Entry</a></li>
+                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.php">Pronvicial Nominee Program (PNP)</a></li>
+                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.php">Atlantic Immigration Program (AIP)</a></li>
+                    <li><a class="dropdown-item p-3" href="sponsorship.php">Sponsorship</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.php">Canadian Citizenship Immigration</a></li>
 
                     </ul>
                 </li>
@@ -87,18 +87,18 @@
                 </li>
                 
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="travel-reservations.html">Travel Reservations</a>
+                    <a class="nav-link" href="travel-reservations.php">Travel Reservations</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="about.php">About us</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="contact.html">Contact us</a>
+                    <a class="nav-link" href="contact.php">Contact us</a>
                 </li>
             </ul>
 
             <div>
-                <a href="apply.html" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
+                <a href="apply.php" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
             </form>
           </div>
         </div>
@@ -106,10 +106,10 @@
     <!-- Navbar ends -->
 
     <!-- Banner -->
-    <div class="banner australia d-flex align-items-end" data-aos="slide-down" data-aos-duration="800">
+    <div class="banner usa d-flex align-items-end" data-aos="slide-down" data-aos-duration="800">
         <div class="container">
-            <p class="h1 text-light fw-bolder">Study in Australia</p>
-            <a href="apply.html" class="btn btn-accent p-2 px-4 mb-4">Apply Now!</a>
+            <p class="h1 text-light fw-bolder">Study in USA</p>
+            <a href="apply.php" class="btn btn-accent p-2 px-4 mb-4">Apply Now!</a>
         </div>
     </div>
     <!-- Banner ends -->
@@ -121,130 +121,129 @@
             
             <div class="col-md-9 col-lg-7">
                 <div class="paragraph mb-4" data-aos="zoom-out-down" data-aos-duration="700" data-aos-delay="100">
-                    <p class="fs-2 fw-bold font-secondary mb-2 p-color" >Study in Australia</p>
-                    <p>Australia is one of the most popular study destinations in the world, known for its world-class universities, cultural diversity, and high-quality living standards. With a variety of courses and degrees offered, students can choose the path that suits their academic and career aspirations.</p>
+                    <p class="fs-2 fw-bold font-secondary mb-2 p-color">Study in the USA</p>
+                    <p>The United States is one of the top destinations for international students, offering a wide variety of academic programs, cultural experiences, and opportunities for personal growth. With world-class universities, diverse communities, and cutting-edge research, the USA is an excellent choice for students pursuing higher education.</p>
                 </div>
 
                 <hr>
 
                 <div class="paragraph my-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="150">
-                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Why study in Australia?</p>
-                    <p>Australia offers numerous advantages for international students, including:</p>
+                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Why Study in the USA?</p>
+                    <p>The USA offers countless benefits for international students, including:</p>
                     <ul class="feature-list">
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>World-Class Education</strong>: Australian universities consistently rank among the top in global rankings, offering a wide range of undergraduate and postgraduate programs.
+                                <strong>Top Universities</strong>: The USA is home to some of the world’s best universities, such as Harvard, Stanford, and MIT, known for their rigorous academic programs and research opportunities.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Cultural Diversity</strong>: With students from over 150 countries, you'll be exposed to a rich cultural environment, making it easier to adapt and build global networks.
+                                <strong>Wide Range of Programs</strong>: Whether you're interested in liberal arts, engineering, business, or the sciences, US universities offer a vast selection of programs to meet your academic interests.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Research Opportunities</strong>: Australia is a hub for research and innovation, offering exceptional research facilities, particularly in fields like healthcare, environmental science, and engineering.
+                                <strong>Research and Innovation</strong>: The USA leads in groundbreaking research, providing students with opportunities to engage in cutting-edge projects and access world-class resources.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Work While Studying</strong>: Students on a student visa can work up to 20 hours per week during the semester and full-time during breaks, helping them cover living expenses.
+                                <strong>Work Opportunities</strong>: International students in the USA can work part-time on campus and apply for Optional Practical Training (OPT), which allows them to gain work experience in their field of study after graduation.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Post-Graduation Work Opportunities</strong>: Graduates can apply for a post-study work visa, allowing them to gain professional experience in Australia after completing their studies.
+                                <strong>Cultural Diversity</strong>: The USA is known for its multicultural environment, offering students a unique opportunity to engage with people from all around the world.
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <hr>
-                
+
                 <div class="paragraph my-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
-                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Popular Study Destinations in Australia</p>
-                    <p>Australia is home to several cities that are recognized globally for their educational standards, safety, and student-friendly atmosphere. Some top cities include:</p>
+                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Popular Study Destinations in the USA</p>
+                    <p>The USA has numerous universities and cities that are popular among international students. Some of the top study destinations include:</p>
                     <ul class="feature-list">
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Sydney</strong>: Known for its vibrant culture, iconic landmarks like the Sydney Opera House, and top universities like the University of Sydney and UNSW.
+                                <strong>New York City</strong>: Home to prestigious institutions like Columbia University and NYU, New York offers an exciting urban environment with countless opportunities for professional and cultural experiences.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Melbourne</strong>: A city famous for its arts, food, and sports, Melbourne is home to universities such as the University of Melbourne and Monash University.
+                                <strong>California</strong>: With top universities such as Stanford, UC Berkeley, and UCLA, California provides an excellent academic environment along with stunning natural landscapes.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Brisbane</strong>: This city is known for its warm climate and friendly environment. Popular universities include the University of Queensland and Queensland University of Technology (QUT).
+                                <strong>Boston</strong>: Known for its historic universities like Harvard and MIT, Boston is a global hub for higher education and innovation.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Perth</strong>: Offering a peaceful and modern lifestyle, Perth boasts universities like the University of Western Australia and Curtin University.
+                                <strong>Chicago</strong>: The Windy City is home to the University of Chicago and Northwestern University, offering a blend of academic excellence and vibrant city life.
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <hr>
-                
+
                 <div class="paragraph my-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="250">
-                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">How to Apply to Study in Australia?</p>
-                    <p>The application process for studying in Australia typically involves:</p>
+                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">How to Apply to Study in the USA?</p>
+                    <p>The application process to study in the USA includes several key steps:</p>
                     <ul class="feature-list">
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Choosing a Course</strong>: Decide on the degree or program that aligns with your career goals.
+                                <strong>Choosing a Program</strong>: Research and select the program that aligns with your academic interests and career aspirations.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Meeting Admission Requirements</strong>: Ensure you meet the academic and English language proficiency requirements (such as IELTS or TOEFL scores).
+                                <strong>Meeting Admission Requirements</strong>: Ensure you meet the university's academic, language, and standardized test requirements, such as TOEFL, IELTS, GRE, or SAT scores.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Submitting an Application</strong>: Apply directly to the university or via Nemconsults online application portals."
+                                <strong>Applying Online</strong>: Submit your application through the university’s online portal, along with transcripts, test scores, recommendation letters, and a statement of purpose.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Receiving an Offer</strong>: Once accepted, you’ll receive an offer letter from the university. You may need to pay a deposit to secure your place.
+                                <strong>Receiving an Offer</strong>: If your application is successful, you will receive an admission offer, which you must accept to proceed with the next steps.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Applying for a Student Visa</strong>: After accepting the offer, you can apply for an Australian student visa.
+                                <strong>Applying for a Student Visa</strong>: After accepting your offer, apply for a US student visa (F-1 visa) and prepare for your journey to the USA.
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="text-center text-md-start" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="300">
-                    <a href="apply.html" class="btn btn-accent p-3 px-5 mb-4">Apply Now!</a>
+                    <a href="apply.php" class="btn btn-accent p-3 px-5 mb-4">Apply Now!</a>
                 </div>
-
-
             </div>
 
+
             <div class="col-lg-5 col-md-3 d-md-flex justify-content-center object-fit-cover overflow-hidden p-0" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
-                <img src="images/australia-2.jpg" class="h-100" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-delay="">
+                <img src="images/usa-2.jpg" class="h-100" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-delay="">
             </div>
             <div class="col-6">
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED">
-    <title>Nemconsults - Atlantic Immigration Program (AIP)</title>
+    <title>Nemconsults - Contact us</title>
     
     <!-- Favicon -->
      <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
@@ -37,7 +37,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 pt-2" aria-label="Fifth navbar example" >
         <div class="container-fluid px-lg-4">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="images/logo-transparent.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,26 +49,26 @@
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Study Abroad</a>
                     <ul class="dropdown-menu p-lg-3">
-                      <li><a class="dropdown-item p-3" href="study-in-canada.html">Study in Canada</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-uk.html">Study in UK</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-usa.html">Study in USA</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-australia.html">Study in Australia</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-newZealand.html">Study in New Zealand</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-europe.html">Study in Europe</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-canada.php">Study in Canada</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-uk.php">Study in UK</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-usa.php">Study in USA</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-australia.php">Study in Australia</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-newZealand.php">Study in New Zealand</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-europe.php">Study in Europe</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Consultation services</a>
                     <ul class="dropdown-menu p-lg-3">
-                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.html">Canadian Visitor Visa</a></li>
-                    <li><a class="dropdown-item p-3" href="canada-work-permit.html">Canada Work Permit</a></li>
-                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.html">Immigrate to Canada</a></li>
-                    <li><a class="dropdown-item p-3" href="express-entry.html">Express Entry</a></li>
-                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.html">Pronvicial Nominee Program (PNP)</a></li>
-                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.html">Atlantic Immigration Program (AIP)</a></li>
-                    <li><a class="dropdown-item p-3" href="sponsorship.html">Sponsorship</a></li>
-                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.html">Canadian Citizenship Immigration</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.php">Canadian Visitor Visa</a></li>
+                    <li><a class="dropdown-item p-3" href="canada-work-permit.php">Canada Work Permit</a></li>
+                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.php">Immigrate to Canada</a></li>
+                    <li><a class="dropdown-item p-3" href="express-entry.php">Express Entry</a></li>
+                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.php">Pronvicial Nominee Program (PNP)</a></li>
+                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.php">Atlantic Immigration Program (AIP)</a></li>
+                    <li><a class="dropdown-item p-3" href="sponsorship.php">Sponsorship</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.php">Canadian Citizenship Immigration</a></li>
 
                     </ul>
                 </li>
@@ -84,18 +84,18 @@
                 </li>
                 
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="travel-reservations.html">Travel Reservations</a>
+                    <a class="nav-link" href="travel-reservations.php">Travel Reservations</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="about.php">About us</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="contact.html">Contact us</a>
+                    <a class="nav-link" href="contact.php">Contact us</a>
                 </li>
             </ul>
 
             <div>
-                <a href="apply.html" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
+                <a href="apply.php" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
             </form>
           </div>
         </div>
@@ -103,63 +103,63 @@
     <!-- Navbar ends -->
 
     <!-- Banner -->
-    <div class="banner canada-visitor-visa d-flex align-items-end" data-aos="fade-down" data-aos-duration="800">
+    <div class="banner usa d-flex align-items-end" data-aos="slide-down" data-aos-duration="800">
         <div class="container">
-            <p class="h1 text-light mb-5 display-4 fw-bold">Atlantic Immigration Program (AIP)</p>
+            <p class="h1 text-light fw-bolder">Contact us</p>
+            <p class="text-light col-md-7 mb-4"> We're here to assist you with information on courses, universities, scholarships, and other issues!</p>
         </div>
     </div>
     <!-- Banner ends -->
 
-    <!-- Consultation service  -->
-    <section class="consultation-service bg-white py-3 py-md-5">
-        <div class="container my-3 px-4 px-lg-0">
-            <div class="row p-4 pb-4 pb-lg-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-              <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
-                <h2 class="display-4 fw-bold lh-1 text-body-emphasis" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">Atlantic Immigration Program (AIP)</h2>
-                <p class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="150">The Atlantic Immigration Program, former AIPP, is one of the most popular immigration programs in Canada. The AIP is available in the 4 Atlantic provinces:</p>
-                <ul>
-                    <li class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200"><a href="atlantic-province.html#nova-scotia">Nova Scotia</a></li>
-                    <li class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="250"><a href="atlantic-province.html#new-brunswick">New Brunswick</a></li>
-                    <li class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300"><a href="atlantic-province.html#prince-edward-island">Prince Edward Island</a></li>
-                    <li class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="350"><a href="atlantic-province.html#newfoundland">Newfoundland and Labrador</a></li>
-                </ul>
-                <p class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">There are many advantages of applying for Permanent Residency through the AIP, like lower language proficiency, no age restrictions and the option to apply for a temporary work permit if you are currently living outside Canada. You could also apply for an open work permit for spouse.</p>
-              </div>
-              <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg" data-aos="fade-left" data-aos-duration="500" data-aos-delay="550">
-                  <img class="rounded-lg-3" src="images/canada-visitor-visa.jpg" alt="" width="720">
-              </div>
+     <!-- Enquiry Form -->
+     <div class="enquiry p-3 p-md-5">
+        <div class="my-4">
+            <div class="d-flex justify-content-center align-items-center flex-column d-lg-block">
+                <h1 class="title mt-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">Get in touch with Nemconsults</h1>
+                <p class="col-lg-7 col-md-10 mt-3" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50">Enter your details below to reach out to our experts. We would love to hear from you! Please reach out with any questions, comments, or feedback, and we will get back to you as soon as possible</p>
             </div>
-          </div>
-    </section>
-    <!-- Consultation service end-->
-    
-    <!-- consultation-service -->
-    <section class="consultation-service px-2 px-md-0 description">
-        
-        <div class="p-3 py-5 p-md-5 mb-3">
-            <div class="row mt-4">
-                <div class="col-md-12">
-                    <p class="lead" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">The first step is to obtain a valid job offer from a designated employer. This company has already applied and obtained designation from the provincial government to hire foreign workers. We encourage our clients to look for a job offer using well known websites, like: <a href="https://ca.indeed.com/">Indeed</a>, <a href="https://www.careerbeacon.com/">Career Beacon</a>, <a href="https://www.jobbank.gc.ca/" target="_blank" rel="noopener noreferrer">Job Bank </a>and <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn.</a></p>
-                    <p class="lead" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">There are three different types of the Atlantic Immigration Program (AIP):</p>
-                    <ul>
-                        <li class="lead mb-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200"><span class="fw-bold">International Graduate Program: </span>if you studied at a public college or university in Atlantic Canada for 2 years or more, you may be eligible to apply for PR under the AIP International Graduate</li>
-                        <li class="lead mb-2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="250"><span class="fw-bold">High Skilled Program: </span>this program is available for those applicants who have work experience in NOC 0, A or B.</li>
-                        <li class="lead mb-2" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300"><span class="fw-bold">Intermediate Skilled Program: </span>the AIP Intermediate Skill program is available for those applicants who have experience in a position NOC C. </li>
-                    </ul>
+            
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="col-lg-8 col-md-10">    
+                    <form action="" class="row g-3 mt-3">
+                        <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
+                            <label for="firstName" class="form-label fw-bold fs-6">First Name*</label>
+                            <input type="text" class="form-control py-3" name="firstName" required>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
+                            <label for="surname" class="form-label fw-bold fs-6">Surname*</label>
+                            <input type="text" class="form-control py-3" name="surname" required>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+                            <label for="number" class="form-label fw-bold fs-6">Phone Number*</label>
+                            <input type="number" class="form-control py-3" name="number" required>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+                            <label for="email" class="form-label fw-bold fs-6">Email*</label>
+                            <input type="email" class="form-control py-3" name="email" required>
+                        </div>
+                        <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+                            <label for="textarea" class="form-label fw-bold fs-6">Your Message*</label>
+                            <textarea name="textarea" class="form-control" rows="6"></textarea>
+                        </div>
+                       
+                        <div class="col" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="300">
+                            <input type="submit" value="Send Message" class="btn btn-accent px-5 py-3 mt-2">
+                        </div>
+                    </form>
+                </div>
+                <div class="d-none col-md-4 col-lg-4 d-lg-flex justify-content-center object-fit-cover overflow-hidden p-0 mt-2 mt-md-0" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
+                    <img src="images/img-2.png" class="h-100" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-delay="350">
                 </div>
             </div>
+
         </div>
 
-    </section>
-    <!-- consultation-service end-->
-    
-     <!-- consultation-service book-now -->
-     <section class="consultation-service book-now py-5 d-flex flex-column justify-content-center align-items-center text-center">
-        <h2 class="col-lg-7" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">Do you have more questions about the AIP program and its eligibility requirements?</h2>
-        <p class="col-lg-8 px-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">Book an initial consultation today with our immigration consultant.</p>
-        <a href="consultation.html" class="btn btn-accent p-2 px-5" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">Book a consultation</a>
-    </section>
-    <!-- consultation-service book now ends -->
+     </div>
+    <!-- Enquiry Form ends-->
+
+
+
 
     <!-- Footer -->
     <footer class="p-3 p-md-5 py-4">    

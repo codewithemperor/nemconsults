@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED">
-    <title>Nemconsults - Study in New Zealand</title>
+    <title>Nemconsults - Study in UK</title>
     
     <!-- Favicon -->
      <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
@@ -40,7 +40,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 pt-2" aria-label="Fifth navbar example" >
         <div class="container-fluid px-lg-4">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="images/logo-transparent.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,26 +52,26 @@
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Study Abroad</a>
                     <ul class="dropdown-menu p-lg-3">
-                      <li><a class="dropdown-item p-3" href="study-in-canada.html">Study in Canada</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-uk.html">Study in UK</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-usa.html">Study in USA</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-australia.html">Study in Australia</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-newZealand.html">Study in New Zealand</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-europe.html">Study in Europe</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-canada.php">Study in Canada</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-uk.php">Study in UK</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-usa.php">Study in USA</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-australia.php">Study in Australia</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-newZealand.php">Study in New Zealand</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-europe.php">Study in Europe</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Consultation services</a>
                     <ul class="dropdown-menu p-lg-3">
-                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.html">Canadian Visitor Visa</a></li>
-                    <li><a class="dropdown-item p-3" href="canada-work-permit.html">Canada Work Permit</a></li>
-                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.html">Immigrate to Canada</a></li>
-                    <li><a class="dropdown-item p-3" href="express-entry.html">Express Entry</a></li>
-                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.html">Pronvicial Nominee Program (PNP)</a></li>
-                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.html">Atlantic Immigration Program (AIP)</a></li>
-                    <li><a class="dropdown-item p-3" href="sponsorship.html">Sponsorship</a></li>
-                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.html">Canadian Citizenship Immigration</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.php">Canadian Visitor Visa</a></li>
+                    <li><a class="dropdown-item p-3" href="canada-work-permit.php">Canada Work Permit</a></li>
+                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.php">Immigrate to Canada</a></li>
+                    <li><a class="dropdown-item p-3" href="express-entry.php">Express Entry</a></li>
+                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.php">Pronvicial Nominee Program (PNP)</a></li>
+                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.php">Atlantic Immigration Program (AIP)</a></li>
+                    <li><a class="dropdown-item p-3" href="sponsorship.php">Sponsorship</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.php">Canadian Citizenship Immigration</a></li>
 
                     </ul>
                 </li>
@@ -87,18 +87,18 @@
                 </li>
                 
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="travel-reservations.html">Travel Reservations</a>
+                    <a class="nav-link" href="travel-reservations.php">Travel Reservations</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="about.php">About us</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="contact.html">Contact us</a>
+                    <a class="nav-link" href="contact.php">Contact us</a>
                 </li>
             </ul>
 
             <div>
-                <a href="apply.html" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
+                <a href="apply.php" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
             </form>
           </div>
         </div>
@@ -106,10 +106,10 @@
     <!-- Navbar ends -->
 
     <!-- Banner -->
-    <div class="banner new-zealand d-flex align-items-end" data-aos="slide-down" data-aos-duration="800">
+    <div class="banner uk d-flex align-items-end" data-aos="slide-down" data-aos-duration="800">
         <div class="container">
-            <p class="h1 text-light fw-bolder">Study in New Zealand</p>
-            <a href="apply.html" class="btn btn-accent p-2 px-4 mb-4">Apply Now!</a>
+            <p class="h1 text-light fw-bolder">Study in United Kingdom</p>
+            <a href="apply.php" class="btn btn-accent p-2 px-4 mb-4">Apply Now!</a>
         </div>
     </div>
     <!-- Banner ends -->
@@ -121,44 +121,44 @@
             
             <div class="col-md-9 col-lg-7">
                 <div class="paragraph mb-4" data-aos="zoom-out-down" data-aos-duration="700" data-aos-delay="100">
-                    <p class="fs-2 fw-bold font-secondary mb-2 p-color">Study in New Zealand</p>
-                    <p>New Zealand is rapidly gaining popularity as a top study destination for international students. Known for its high-quality education system, stunning natural landscapes, and welcoming communities, New Zealand offers a safe and vibrant environment for students pursuing higher education.</p>
+                    <p class="fs-2 fw-bold font-secondary mb-2 p-color">Study in the United kindom</p>
+                    <p>The UK is a world-renowned destination for higher education, offering a rich history of academic excellence, diverse cultural experiences, and globally recognized degrees. Whether you're pursuing undergraduate or postgraduate studies, the UK provides a dynamic learning environment to help students achieve their career goals.</p>
                 </div>
 
                 <hr>
 
                 <div class="paragraph my-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="150">
-                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Why Study in New Zealand?</p>
-                    <p>Choosing to study in New Zealand comes with numerous advantages, including:</p>
+                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Why Study in the UK?</p>
+                    <p>The UK offers numerous advantages for international students, including:</p>
                     <ul class="feature-list">
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>World-Class Education</strong>: New Zealand’s universities rank among the top 3% worldwide, providing high-quality education that is recognized globally.
+                                <strong>Globally Recognized Degrees</strong>: UK universities are recognized worldwide, providing qualifications that are respected by employers and academic institutions across the globe.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Safe and Peaceful</strong>: New Zealand is known for its low crime rates and political stability, making it one of the safest countries to live and study in.
+                                <strong>Rich Cultural Diversity</strong>: The UK welcomes students from all over the world, offering a multicultural environment that fosters personal and professional growth.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Innovative Learning Environment</strong>: Universities in New Zealand focus on research and hands-on learning, giving students opportunities to work on innovative projects.
+                                <strong>Innovative Research</strong>: The UK is a leader in cutting-edge research, particularly in fields such as science, engineering, and technology, offering students opportunities to collaborate with top researchers.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Work While You Study</strong>: International students in New Zealand can work up to 20 hours a week during their studies and full-time during holidays, providing financial support and work experience.
+                                <strong>Work While Studying</strong>: International students are allowed to work part-time while studying, making it easier to manage living costs.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Breathtaking Landscapes</strong>: From majestic mountains to pristine beaches, New Zealand’s natural beauty offers students a perfect balance of study and outdoor adventure.
+                                <strong>Post-Study Work Opportunities</strong>: Graduates can apply for the UK's Graduate Route visa, which allows them to stay and work in the UK for up to two years after completing their studies.
                             </div>
                         </li>
                     </ul>
@@ -167,31 +167,31 @@
                 <hr>
 
                 <div class="paragraph my-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
-                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Popular Study Destinations in New Zealand</p>
-                    <p>New Zealand offers several universities spread across beautiful and vibrant cities. Some popular study destinations include:</p>
+                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Popular Study Destinations in the UK</p>
+                    <p>The UK is home to some of the world's most vibrant student cities, each offering a unique cultural experience and academic excellence. Popular cities include:</p>
                     <ul class="feature-list">
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Auckland</strong>: The largest city in New Zealand, home to the University of Auckland, which consistently ranks as one of the top universities in the world.
+                                <strong>London</strong>: The UK’s capital is home to world-class universities like University College London (UCL) and King's College London, offering a dynamic, global atmosphere.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Wellington</strong>: New Zealand's capital, known for its vibrant arts and culture scene, with Victoria University of Wellington being a prominent educational institution.
+                                <strong>Manchester</strong>: Known for its thriving student community, Manchester is home to the University of Manchester and Manchester Metropolitan University.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Christchurch</strong>: Known as the “Garden City,” Christchurch is home to the University of Canterbury, offering a blend of academic excellence and natural beauty.
+                                <strong>Edinburgh</strong>: Scotland’s historic capital offers prestigious universities such as the University of Edinburgh and Heriot-Watt University.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Dunedin</strong>: A student-centric city, Dunedin houses the University of Otago, New Zealand's oldest university, offering a rich history and a diverse student community.
+                                <strong>Oxford</strong>: Known for the University of Oxford, one of the world’s oldest and most prestigious institutions, the city of Oxford is synonymous with academic excellence.
                             </div>
                         </li>
                     </ul>
@@ -200,50 +200,50 @@
                 <hr>
 
                 <div class="paragraph my-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="250">
-                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">How to Apply to Study in New Zealand?</p>
-                    <p>To study in New Zealand, follow these application steps:</p>
+                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">How to Apply to Study in the UK?</p>
+                    <p>The application process for studying in the UK typically involves:</p>
                     <ul class="feature-list">
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Choosing a Program</strong>: Start by selecting a study program that matches your interests, whether it's in business, sciences, arts, or engineering.
+                                <strong>Choosing a Course</strong>: Select the degree or program that best suits your academic and career goals.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Meeting Academic Requirements</strong>: Ensure you meet the university's entry requirements, including academic qualifications, English language proficiency (IELTS, TOEFL), and any specific subject prerequisites.
+                                <strong>Meeting Admission Requirements</strong>: Ensure that you meet the academic and English language proficiency requirements, such as IELTS or TOEFL scores.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Submitting Your Application</strong>: Complete the online application on your chosen university’s website, including required documents such as academic transcripts, recommendation letters, and a personal statement.
+                                <strong>Submitting an Application</strong>: Apply directly to the university through UCAS (for undergraduate programs) or the university’s website for postgraduate programs.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Accepting an Offer</strong>: If accepted, you will receive an offer letter. Accept the offer to begin your preparations for studying in New Zealand.
+                                <strong>Receiving an Offer</strong>: If your application is successful, you will receive an offer letter from the university.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Applying for a Student Visa</strong>: After securing admission, apply for a New Zealand student visa, and prepare for an exciting journey of study and exploration.
+                                <strong>Applying for a Student Visa</strong>: After accepting the offer, you can apply for a UK student visa (Tier 4).
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="text-center text-md-start" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="300">
-                    <a href="apply.html" class="btn btn-accent p-3 px-5 mb-4">Apply Now!</a>
+                    <a href="apply.php" class="btn btn-accent p-3 px-5 mb-4">Apply Now!</a>
                 </div>
             </div>
 
 
             <div class="col-lg-5 col-md-3 d-md-flex justify-content-center object-fit-cover overflow-hidden p-0" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
-                <img src="images/new-zealand-2.jpg" class="h-100" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-delay="">
+                <img src="images/uk-2.jpg" class="h-100" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-delay="">
             </div>
             <div class="col-6">
 

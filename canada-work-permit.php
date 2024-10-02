@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED">
-    <title>Nemconsults - Express Entry</title>
+    <title>Nemconsults - Canada Work Permit</title>
     
     <!-- Favicon -->
      <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
@@ -37,7 +37,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 pt-2" aria-label="Fifth navbar example" >
         <div class="container-fluid px-lg-4">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="images/logo-transparent.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,26 +49,26 @@
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Study Abroad</a>
                     <ul class="dropdown-menu p-lg-3">
-                      <li><a class="dropdown-item p-3" href="study-in-canada.html">Study in Canada</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-uk.html">Study in UK</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-usa.html">Study in USA</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-australia.html">Study in Australia</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-newZealand.html">Study in New Zealand</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-europe.html">Study in Europe</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-canada.php">Study in Canada</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-uk.php">Study in UK</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-usa.php">Study in USA</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-australia.php">Study in Australia</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-newZealand.php">Study in New Zealand</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-europe.php">Study in Europe</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Consultation services</a>
                     <ul class="dropdown-menu p-lg-3">
-                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.html">Canadian Visitor Visa</a></li>
-                    <li><a class="dropdown-item p-3" href="canada-work-permit.html">Canada Work Permit</a></li>
-                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.html">Immigrate to Canada</a></li>
-                    <li><a class="dropdown-item p-3" href="express-entry.html">Express Entry</a></li>
-                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.html">Pronvicial Nominee Program (PNP)</a></li>
-                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.html">Atlantic Immigration Program (AIP)</a></li>
-                    <li><a class="dropdown-item p-3" href="sponsorship.html">Sponsorship</a></li>
-                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.html">Canadian Citizenship Immigration</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.php">Canadian Visitor Visa</a></li>
+                    <li><a class="dropdown-item p-3" href="canada-work-permit.php">Canada Work Permit</a></li>
+                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.php">Immigrate to Canada</a></li>
+                    <li><a class="dropdown-item p-3" href="express-entry.php">Express Entry</a></li>
+                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.php">Pronvicial Nominee Program (PNP)</a></li>
+                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.php">Atlantic Immigration Program (AIP)</a></li>
+                    <li><a class="dropdown-item p-3" href="sponsorship.php">Sponsorship</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.php">Canadian Citizenship Immigration</a></li>
 
                     </ul>
                 </li>
@@ -84,18 +84,18 @@
                 </li>
                 
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="travel-reservations.html">Travel Reservations</a>
+                    <a class="nav-link" href="travel-reservations.php">Travel Reservations</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="about.php">About us</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="contact.html">Contact us</a>
+                    <a class="nav-link" href="contact.php">Contact us</a>
                 </li>
             </ul>
 
             <div>
-                <a href="apply.html" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
+                <a href="apply.php" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
             </form>
           </div>
         </div>
@@ -105,7 +105,7 @@
     <!-- Banner -->
     <div class="banner canada-visitor-visa d-flex align-items-end" data-aos="fade-down" data-aos-duration="800">
         <div class="container">
-            <p class="h1 text-light mb-5 display-4 fw-bold">Express Entry</p>
+            <p class="h1 text-light mb-5 display-4 fw-bold">Canadian Work Permit</p>
         </div>
     </div>
     <!-- Banner ends -->
@@ -115,9 +115,17 @@
         <div class="container my-3 px-4 px-lg-0">
             <div class="row p-4 pb-4 pb-lg-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
               <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
-                <h2 class="display-4 fw-bold lh-1 text-body-emphasis" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">Express Entry</h2>
-                <p class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">Canada Express Entry (EE) is a federal immigration program for skilled workers, who have work experience in positions NOC 0, A or B. The program is available for people who live outside and inside Canada. <span class="fw-bold">If your application is approved, you can live in Canada as a permanent resident.</span></p>
-                <p class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="250">The first step is to assess your eligibility to one of the three Express Entry programs described below. Once you enter the EE pool, you will be assigned a number of points based on your age, education, work experience, education, and more. Every 2 or 3 weeks, Immigration will have a round of invitation that will select the profiles that are on the top of the ranking to apply for Permanent Residency. According to a recent Express Entry draw, a strong profile will have more than 450 points.</p>
+                <h2 class="display-4 fw-bold lh-1 text-body-emphasis" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">Canada Work Permit</h2>
+                <p class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">To work in Canada, you must apply and be approved for a Canadian work permit (some exceptions apply). There are several different types of work permits:</p>
+                <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+                    <li class="fw-semibold">Open Work Permit for spouse</li>
+                    <li class="fw-semibold">Post-Graduate Work Permit (PGWP)</li>
+                    <li class="fw-semibold">Co op Work Permit</li>
+                    <li class="fw-semibold">Employers-specific Work Permit</li>
+                </ul>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <a href="consultation.php" class="btn btn-accent p-2 px-5" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="400">Book Now!</a>
+                </div>
               </div>
               <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
                   <img class="rounded-lg-3" src="images/canada-visitor-visa.jpg" alt="" width="720">
@@ -128,47 +136,65 @@
     <!-- Consultation service end-->
     
     <!-- consultation-service -->
-    <section class="consultation-service description px-2 px-md-0">
+    <section class="consultation-service description px-2 px-md-0 pb-5">
         
-        <div class="p-3 py-5 p-md-5 mb-3">
-            <div class="row gy-5">
-                <div class="col-12 col-lg" data-aos="fade-right" data-aos-duration="500" data-aos-delay="0">
-                    <h1 class="title display-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Federal Skilled Worker (FSW) Program</h1>
-                    <p class="" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">you need to score 67 out of 100 points before you can enter the Express Entry pool. This program will consider your work experience in the past 10 years. The selection factors are the following:</p>
-                    <ul class="">
-                        <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Age</li>
-                        <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="250">Education</li>
-                        <li data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">whether you have a valid job offer</li>
-                        <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="350">English and/or French language skills</li>
-                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">Adaptability (how well you're likely to settle here)</li>
-
-                    </ul>
-                </div>
-
-                <div class="col-12 col-lg " data-aos="fade-down" data-aos-duration="500" data-aos-delay="450">
-                    <h1 class="title display-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">Canadian Experience Class (CEC) Program</h1>
-                    <p class="" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="550">You may be eligible for CEC if you have a minimum of one year work experience in Canada in the past 3 years. The position must be in NOC 0, A or B</p>
-                    <p class="" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="600">You also must meet language requirements, and even though there are no education requirements it is highly recommended that you validate your highest level of education in order to obtain more points for the Express Entry pool.</p>
-                </div>
-
-                <div class="col-12 col-lg "  data-aos="fade-left" data-aos-duration="500" data-aos-delay="800">
-                    <h1 class="title display-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="850">Federal Skilled Trades (FST) Program</h1>
-                    <p class="" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="900">This program was designed to bring skilled trades people to Canada. All positions are in NOC B, and you are required to show a minimum of 2 years full time work experience in a trade position before you apply.</p>
-                    <p class="" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="900">You are required to show language proficiency, as well as meet the job requirements for that skilled trade as set out in the NOC, except for needing a certificate of qualification. </p>
-                    <p class="" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="900">The applicant must have a valid job offer or a certificate of qualification in that skilled trade.</p>
-                    
+        <div class="container pt-5 mb-3">
+            <h1 class="title display-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Open Work Permit for spouse</h1>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <p class="lead" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">This type of work permit allows you to work for any employer in Canada. It is common for spouses of international students enrolled in a designated learning institution college or university.</p>
                 </div>
             </div>
-        </div>  
+        </div>
+
+        <div class="container mb-3">
+            <h1 class="title display-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Post-Graduate Work Permit (PGWP)</h1>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <p class="lead"  data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="250">You are eligible to apply for a post graduation work permit if you attended a designated post-secondary institution in Canada. One year of study may get you a work permit for an additional year, while a two-year program may get you a work permit for up to three years after the completion of your studies.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <h1 class="title display-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Co op Work Permit</h1>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <p class="lead"  data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="350">If you are required to work during your studies, like an internship, you are required to have a Co Op Work Permit. This kind of work permit can be applied when you first submit your Study Permit application.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <h1 class="title display-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">Employers-specific Work Permit</h1>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <p class="lead"  data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="450">This work permit is issued to a specific employer, and usually they have a positive LMIA (Labour Market Impact Assessment) supporting this application. There are some exceptions to this, where your work permit is LMIA-exempt, like the Open Work Permit for spouse or PGWP.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <h1 class="title display-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">Why should I retain an immigration consultant to assist with my Canadian work permit application?</h1>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <p class="lead"  data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="550">Our immigration consultant Ben Sommers will check your eligibility to apply for a Canadian work permit. There are several different options available to apply for a Work Permit, but the majority of the programs require the applicant to have a job offer that is supported by a LMIA (Labour Market Impact Assessment).</p>
+
+                    <p class="lead"  data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="600">During our initial consultation, Ben Sommers will check your eligibility for a work permit, as well answer all your questions and plan next steps. Once we confirm that you are eligible to apply for a Work Permit, we will sign a retainer agreement and provide you with an initial checklist of documents.</p>
+
+                    <p class="lead"  data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="650">We will make sure that your application is complete before we submit it to immigration Canada. We will accompany you from the early stages of your application until your application is processed and finalized by the government. </p>
+                </div>
+            </div>
+        </div>     
 
     </section>
     <!-- consultation-service end-->
     
      <!-- consultation-service book-now -->
      <section class="consultation-service book-now py-5 d-flex flex-column justify-content-center align-items-center text-center">
-        <h2 data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">Is the Canada Express Entry the right program for you?</h2>
-        <p class="col-lg-8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">Book an initial consultation today!</p>
-        <a href="consultation.html" class="btn btn-accent p-2 px-5" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">Book Now</a>
+        <h2 data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">Ready to apply for a work permit for Canada?</h2>
+        <p class="col-md-8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">You can book an initial consultation today on our website. Our immigration consultant will answer your questions related to your Canadian work permit application. We can help with your initial application or extend work permit. Contact us for more information. </p>
+        <a href="consultation.php" class="btn btn-accent p-2 px-5" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">Register Now!</a>
     </section>
     <!-- consultation-service book now ends -->
 

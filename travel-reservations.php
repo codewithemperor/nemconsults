@@ -40,7 +40,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 pt-2" aria-label="Fifth navbar example" >
         <div class="container-fluid px-lg-4">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="images/logo-transparent.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,26 +52,26 @@
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Study Abroad</a>
                     <ul class="dropdown-menu p-lg-3">
-                      <li><a class="dropdown-item p-3" href="study-in-canada.html">Study in Canada</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-uk.html">Study in UK</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-usa.html">Study in USA</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-australia.html">Study in Australia</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-newZealand.html">Study in New Zealand</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-europe.html">Study in Europe</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-canada.php">Study in Canada</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-uk.php">Study in UK</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-usa.php">Study in USA</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-australia.php">Study in Australia</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-newZealand.php">Study in New Zealand</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-europe.php">Study in Europe</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Consultation services</a>
                     <ul class="dropdown-menu p-lg-3">
-                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.html">Canadian Visitor Visa</a></li>
-                    <li><a class="dropdown-item p-3" href="canada-work-permit.html">Canada Work Permit</a></li>
-                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.html">Immigrate to Canada</a></li>
-                    <li><a class="dropdown-item p-3" href="express-entry.html">Express Entry</a></li>
-                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.html">Pronvicial Nominee Program (PNP)</a></li>
-                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.html">Atlantic Immigration Program (AIP)</a></li>
-                    <li><a class="dropdown-item p-3" href="sponsorship.html">Sponsorship</a></li>
-                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.html">Canadian Citizenship Immigration</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.php">Canadian Visitor Visa</a></li>
+                    <li><a class="dropdown-item p-3" href="canada-work-permit.php">Canada Work Permit</a></li>
+                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.php">Immigrate to Canada</a></li>
+                    <li><a class="dropdown-item p-3" href="express-entry.php">Express Entry</a></li>
+                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.php">Pronvicial Nominee Program (PNP)</a></li>
+                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.php">Atlantic Immigration Program (AIP)</a></li>
+                    <li><a class="dropdown-item p-3" href="sponsorship.php">Sponsorship</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.php">Canadian Citizenship Immigration</a></li>
 
                     </ul>
                 </li>
@@ -87,18 +87,18 @@
                 </li>
                 
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="travel-reservations.html">Travel Reservations</a>
+                    <a class="nav-link" href="travel-reservations.php">Travel Reservations</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="about.php">About us</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="contact.html">Contact us</a>
+                    <a class="nav-link" href="contact.php">Contact us</a>
                 </li>
             </ul>
 
             <div>
-                <a href="apply.html" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
+                <a href="apply.php" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
             </form>
           </div>
         </div>
@@ -193,7 +193,7 @@
                                 <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="400"><i class="fa-solid fa-circle-check"></i>No Obligation</li>
                                 <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="450"><i class="fa-solid fa-circle-check"></i>Free Cover & NOC Letter</li>
                             </ul>
-                            <a href="flight-itinerary.html" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">Order Now!</a>
+                            <a href="flight-itinerary.php" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">Order Now!</a>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                                 <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="450"><i class="fa-solid fa-circle-check"></i>No Obligation</li>
                                 <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="500"><i class="fa-solid fa-circle-check"></i>Free Cover & NOC Letter</li>
                             </ul>
-                            <a href="hotel-reservation.html" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="550">Order Now!</a>
+                            <a href="hotel-reservation.php" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="550">Order Now!</a>
                         </div>
                     </div>
                 </div>
@@ -232,7 +232,7 @@
                                 <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="400"><i class="fa-solid fa-circle-check"></i>No Obligation</li>
                                 <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="450"><i class="fa-solid fa-circle-check"></i>Free Cover & NOC Letter</li>
                             </ul>
-                            <a href="travel-insurace.html" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">Order Now!</a>
+                            <a href="travel-insurace.php" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">Order Now!</a>
                         </div>
                     </div>
                 </div>
@@ -255,7 +255,7 @@
                                 <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="500"><i class="fa-solid fa-circle-check"></i>Free Cancellation</li>
                                 <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="550"><i class="fa-solid fa-circle-check"></i>Free Cover & NOC Letter</li>
                             </ul>
-                            <a href="flight-itinerary-and-hotel-reservation.html" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="600">Order Now!</a>
+                            <a href="flight-itinerary-and-hotel-reservation.php" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="600">Order Now!</a>
                         </div>
                     </div>
                 </div>
@@ -280,7 +280,7 @@
                                 <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="600"><i class="fa-solid fa-circle-check"></i>$0 deductible, $50,000 coverage</li>
                                 <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="650"><i class="fa-solid fa-circle-check"></i>Free Cover & NOC Letter</li>
                             </ul>
-                            <a href="flight+hotel+insurance.html" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="550">Order Now!</a>
+                            <a href="flight+hotel+insurance.php" class="w-100 btn btn-lg btn-outline-primary" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="550">Order Now!</a>
                         </div>
                     </div>
                 </div>
@@ -323,7 +323,7 @@
                                 Flight Reservation for Visa Application
                             </button>
                         </h2>
-                        <div id="faq-one" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" style="">
+                        <div id="faq-one" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
                                 Flight Reservation for visa is a required document at Embassy which can satisfy consulate officer and increase your visa approval chances. Part of the visa application process requests that you obtain a round trip flight reservation. This does not mean that you need to purchase a real flight ticket or dummy ticket as the embassies advise not to buy a flight ticket before applying your travel visa and they recommend to buy flight reservation until your visa is approved. A flight reservation is more like a dummy flight ticket that will significantly improve the chance of your visa being approved. Unfortunately,there are scams around that will deliver a fake flight itinerary and if you submit this with your visa application you will be rejected.This will not only shatter your travel plans but will also affect any future visa applications. Trying to acquire a legitimate flight reservation can be rather complicated and confusing which is why it's better to seek VisaBookings help who provides verifiable flight reservation to support all Schengen and Non-Schengen countries visa applications. Our flight resrvation has PNR code or booking number (Provided in flight reservation document with airlines name)  which can be directly verified on airlines website 
                             </div>
@@ -500,7 +500,7 @@
             <div class="mt-4 ">
                 <p class="fs-5 mb-0">OUR ADDRESS</p>
                 <hr>
-                <p class="address"><span>CANADA ADDRESS: </span>149D Campbell Avenue, St. John A1E 2Z7 Newfoundland Labrador</p>                
+                <p class="address"><span>CANADA ADDRESS: </span>149D Campbell Avenue, St. John A1E 2Z7 Newfoundland & Labrador</p>                
                 <p class="address"><span>USA ADDRESS 1:</span> 1209 MOUNTAIN ROAD PL NE STE N BERNALILLO COUNTY ALBUQUERQUE, NM,87110, USA</p>
                 <p class="address"><span>USA ADDRESS 2: </span>444 Alaska Avenue Suite, #BXH896 Torrance, CA 90503, USA</p>
                 <div class="address"><span>TELEPHONE: </span>

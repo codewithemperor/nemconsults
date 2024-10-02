@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED">
-    <title>Nemconsults - Study in Canada</title>
-
-    <!-- Select 2 -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>NEMCL - Study in Australia</title>
     
     <!-- Favicon -->
      <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 pt-2" aria-label="Fifth navbar example" >
         <div class="container-fluid px-lg-4">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="images/logo-transparent.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,26 +52,26 @@
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Study Abroad</a>
                     <ul class="dropdown-menu p-lg-3">
-                      <li><a class="dropdown-item p-3" href="study-in-canada.html">Study in Canada</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-uk.html">Study in UK</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-usa.html">Study in USA</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-australia.html">Study in Australia</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-newZealand.html">Study in New Zealand</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-europe.html">Study in Europe</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-canada.php">Study in Canada</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-uk.php">Study in UK</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-usa.php">Study in USA</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-australia.php">Study in Australia</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-newZealand.php">Study in New Zealand</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-europe.php">Study in Europe</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Consultation services</a>
                     <ul class="dropdown-menu p-lg-3">
-                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.html">Canadian Visitor Visa</a></li>
-                    <li><a class="dropdown-item p-3" href="canada-work-permit.html">Canada Work Permit</a></li>
-                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.html">Immigrate to Canada</a></li>
-                    <li><a class="dropdown-item p-3" href="express-entry.html">Express Entry</a></li>
-                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.html">Pronvicial Nominee Program (PNP)</a></li>
-                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.html">Atlantic Immigration Program (AIP)</a></li>
-                    <li><a class="dropdown-item p-3" href="sponsorship.html">Sponsorship</a></li>
-                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.html">Canadian Citizenship Immigration</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.php">Canadian Visitor Visa</a></li>
+                    <li><a class="dropdown-item p-3" href="canada-work-permit.php">Canada Work Permit</a></li>
+                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.php">Immigrate to Canada</a></li>
+                    <li><a class="dropdown-item p-3" href="express-entry.php">Express Entry</a></li>
+                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.php">Pronvicial Nominee Program (PNP)</a></li>
+                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.php">Atlantic Immigration Program (AIP)</a></li>
+                    <li><a class="dropdown-item p-3" href="sponsorship.php">Sponsorship</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.php">Canadian Citizenship Immigration</a></li>
 
                     </ul>
                 </li>
@@ -87,18 +87,18 @@
                 </li>
                 
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="travel-reservations.html">Travel Reservations</a>
+                    <a class="nav-link" href="travel-reservations.php">Travel Reservations</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="about.php">About us</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="contact.html">Contact us</a>
+                    <a class="nav-link" href="contact.php">Contact us</a>
                 </li>
             </ul>
 
             <div>
-                <a href="apply.html" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
+                <a href="apply.php" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
             </form>
           </div>
         </div>
@@ -106,10 +106,10 @@
     <!-- Navbar ends -->
 
     <!-- Banner -->
-    <div class="banner canada d-flex align-items-end" data-aos="slide-down" data-aos-duration="800">
+    <div class="banner ireland d-flex align-items-end" data-aos="slide-down" data-aos-duration="800">
         <div class="container">
-            <p class="h1 text-light fw-bolder">Study in Canada</p>
-            <a href="apply.html" class="btn btn-accent p-2 px-4 mb-4">Apply Now!</a>
+            <p class="h1 text-light fw-bolder">Study in Europe</p>
+            <a href="apply.php" class="btn btn-accent p-2 px-4 mb-4">Apply Now!</a>
         </div>
     </div>
     <!-- Banner ends -->
@@ -121,44 +121,44 @@
             
             <div class="col-md-9 col-lg-7">
                 <div class="paragraph mb-4" data-aos="zoom-out-down" data-aos-duration="700" data-aos-delay="100">
-                    <p class="fs-2 fw-bold font-secondary mb-2 p-color">Study in Canada</p>
-                    <p>Canada is one of the most attractive study destinations for international students, offering high-quality education, a diverse culture, and excellent post-graduate work opportunities. With numerous renowned institutions and a friendly environment, Canada is an ideal place to pursue your academic and professional aspirations.</p>
+                    <p class="fs-2 fw-bold font-secondary mb-2 p-color">Study in Europe</p>
+                    <p>Europe is an increasingly popular destination for international students, offering a diverse range of educational experiences, rich cultures, and a welcoming environment. With world-renowned universities, historical landmarks, and a dynamic modern economy, Europe is an ideal place to pursue higher education.</p>
                 </div>
 
                 <hr>
 
                 <div class="paragraph my-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="150">
-                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Why study in Canada?</p>
-                    <p>Canada provides a range of benefits for international students, including:</p>
+                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Why Study in Europe?</p>
+                    <p>Studying in Europe offers numerous advantages, including:</p>
                     <ul class="feature-list">
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>World-Renowned Education</strong>: Canadian universities are known for their academic excellence, consistently ranking in the top tiers globally across various disciplines.
+                                <strong>Globally Recognized Qualifications</strong>: European universities provide qualifications that are internationally recognized, ensuring your degree will have global value.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Affordable Tuition Fees</strong>: Compared to other top destinations, tuition fees in Canada are relatively lower, making it a cost-effective option for international students.
+                                <strong>Innovation and Research Opportunities</strong>: Europe is home to cutting-edge research and innovation, offering students opportunities in sectors such as technology, medicine, and engineering.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>High Standard of Living</strong>: Canada offers a high quality of life with access to top-notch healthcare, safety, and recreational opportunities.
+                                <strong>Cultural Diversity</strong>: Studying in Europe allows students to experience a wide variety of languages, traditions, and cultural practices, making for an enriching academic and social life.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Post-Graduation Work Opportunities</strong>: Graduates from Canadian institutions are eligible to apply for a Post-Graduation Work Permit (PGWP), allowing them to gain valuable work experience in Canada.
+                                <strong>Post-Study Work Opportunities</strong>: Many European countries offer post-study work visas, allowing international students to gain valuable work experience after graduation.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Cultural Diversity</strong>: Canada is known for its multicultural society, where people from all over the world come together, creating a welcoming and inclusive environment.
+                                <strong>Safe and Welcoming Environment</strong>: Europe is known for its safe, friendly, and inclusive atmosphere, making it an ideal place for international students.
                             </div>
                         </li>
                     </ul>
@@ -167,31 +167,31 @@
                 <hr>
 
                 <div class="paragraph my-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
-                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Popular Study Destinations in Canada</p>
-                    <p>Canada is home to various cities recognized globally for their educational standards and student-friendly environments. Some of the top cities include:</p>
+                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">Popular Study Destinations in Europe</p>
+                    <p>Europe offers a variety of prestigious universities in vibrant cities. Popular study destinations include:</p>
                     <ul class="feature-list">
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Toronto</strong>: A dynamic and multicultural city, Toronto offers top universities like the University of Toronto and Ryerson University.
+                                <strong>Germany</strong>: Known for its high-quality education and affordable tuition fees, Germany is a top choice for international students, particularly in engineering and technical fields.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Vancouver</strong>: Known for its breathtaking landscapes, Vancouver is home to top institutions like the University of British Columbia (UBC) and Simon Fraser University.
+                                <strong>France</strong>: Home to some of the world's oldest and most prestigious universities, France offers rich academic programs, especially in the arts, humanities, and business.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Montreal</strong>: This city boasts a vibrant arts scene and is home to McGill University, one of the most prestigious institutions in Canada.
+                                <strong>Netherlands</strong>: With a focus on research and innovation, the Netherlands provides a wide array of programs in English, making it a welcoming place for international students.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Ottawa</strong>: The capital city of Canada, Ottawa is known for Carleton University and the University of Ottawa, offering a range of bilingual programs.
+                                <strong>Spain</strong>: Offering a mix of academic excellence and cultural richness, Spain is a great destination for students looking to study in fields such as architecture, business, and the arts.
                             </div>
                         </li>
                     </ul>
@@ -200,51 +200,51 @@
                 <hr>
 
                 <div class="paragraph my-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="250">
-                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">How to Apply to Study in Canada?</p>
-                    <p>The process of applying to Canadian universities generally involves the following steps:</p>
+                    <p class="fs-2 fw-bold font-secondary mb-1 p-color">How to Apply to Study in Europe?</p>
+                    <p>Follow these steps to begin your journey of studying in Europe:</p>
                     <ul class="feature-list">
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Choosing a Program</strong>: Select the course that aligns with your academic and professional goals.
+                                <strong>Choose a Program</strong>: Select a study program from one of Europe’s top universities, whether in fields like science, technology, arts, or business.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Meeting Admission Requirements</strong>: Ensure you meet the minimum academic and language requirements (such as IELTS or TOELF). Note: Some countries are excluded from language proficiency tests depending on country, university, or college-specific requirements.
-
+                                <strong>Meet Entry Requirements</strong>: Ensure you meet the academic and language proficiency requirements (such as IELTS, TOEFL, or other language tests) for the program you wish to apply for.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Submitting an Application</strong>: Submit your application with us at nemconsults using our online portal or apply to the universities using their respective online application portal. 
+                                <strong>Submit Your Application</strong>: Apply directly through the university's application portal, providing necessary documents like transcripts, recommendations, and personal statements.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Receiving an Offer</strong>: Once you meet the university's criteria, you’ll receive an offer letter and may need to pay a deposit to secure your spot.
+                                <strong>Accept Your Offer</strong>: If you receive an offer, accept it and begin preparations for your move to Europe.
                             </div>
                         </li>
                         <li class="feature">
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="text">
-                                <strong>Applying for a Student Visa</strong>: After accepting your offer, you can apply for a Canadian study permit to enter and study in Canada.
+                                <strong>Apply for a Student Visa</strong>: Once you’ve accepted an offer, apply for a student visa for the country of your choice and get ready for an exciting academic experience in Europe.
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="text-center text-md-start" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="300">
-                    <a href="apply.html" class="btn btn-accent p-3 px-5 mb-4">Apply Now!</a>
+                    <a href="apply.php" class="btn btn-accent p-3 px-5 mb-4">Apply Now!</a>
                 </div>
             </div>
 
 
+
             <div class="col-lg-5 col-md-3 d-md-flex justify-content-center object-fit-cover overflow-hidden p-0" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
-                <img src="images/canada-2.jpg" class="h-100" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-delay="">
+                <img src="images/ireland-2.jpg" class="h-100" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-delay="">
             </div>
             <div class="col-6">
 
@@ -341,9 +341,6 @@
 
      </div>
     <!-- Enquiry Form ends-->
-
-
-
 
     <!-- Footer -->
     <footer class="p-3 p-md-5 py-4">    

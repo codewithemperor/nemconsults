@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED">
-    <title>Nemconsults - Flight Itinerary & Hotel Reservation</title>
+    <title>Nemconsults - Hotel Reservation</title>
     
     <!-- Favicon -->
      <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
@@ -40,7 +40,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 pt-2" aria-label="Fifth navbar example" >
         <div class="container-fluid px-lg-4">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="images/logo-transparent.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,26 +52,26 @@
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Study Abroad</a>
                     <ul class="dropdown-menu p-lg-3">
-                      <li><a class="dropdown-item p-3" href="study-in-canada.html">Study in Canada</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-uk.html">Study in UK</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-usa.html">Study in USA</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-australia.html">Study in Australia</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-newZealand.html">Study in New Zealand</a></li>
-                      <li><a class="dropdown-item p-3" href="study-in-europe.html">Study in Europe</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-canada.php">Study in Canada</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-uk.php">Study in UK</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-usa.php">Study in USA</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-australia.php">Study in Australia</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-newZealand.php">Study in New Zealand</a></li>
+                      <li><a class="dropdown-item p-3" href="study-in-europe.php">Study in Europe</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown pe-lg-2">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Consultation services</a>
                     <ul class="dropdown-menu p-lg-3">
-                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.html">Canadian Visitor Visa</a></li>
-                    <li><a class="dropdown-item p-3" href="canada-work-permit.html">Canada Work Permit</a></li>
-                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.html">Immigrate to Canada</a></li>
-                    <li><a class="dropdown-item p-3" href="express-entry.html">Express Entry</a></li>
-                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.html">Pronvicial Nominee Program (PNP)</a></li>
-                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.html">Atlantic Immigration Program (AIP)</a></li>
-                    <li><a class="dropdown-item p-3" href="sponsorship.html">Sponsorship</a></li>
-                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.html">Canadian Citizenship Immigration</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-visitor-visa.php">Canadian Visitor Visa</a></li>
+                    <li><a class="dropdown-item p-3" href="canada-work-permit.php">Canada Work Permit</a></li>
+                    <li><a class="dropdown-item p-3" href="immigrate-to-canada.php">Immigrate to Canada</a></li>
+                    <li><a class="dropdown-item p-3" href="express-entry.php">Express Entry</a></li>
+                    <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.php">Pronvicial Nominee Program (PNP)</a></li>
+                    <li><a class="dropdown-item p-3" href="atlantic-immigration-program.php">Atlantic Immigration Program (AIP)</a></li>
+                    <li><a class="dropdown-item p-3" href="sponsorship.php">Sponsorship</a></li>
+                    <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.php">Canadian Citizenship Immigration</a></li>
 
                     </ul>
                 </li>
@@ -87,18 +87,18 @@
                 </li>
                 
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="travel-reservations.html">Travel Reservations</a>
+                    <a class="nav-link" href="travel-reservations.php">Travel Reservations</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="about.php">About us</a>
                 </li>
                 <li class="nav-item pe-lg-2">
-                    <a class="nav-link" href="contact.html">Contact us</a>
+                    <a class="nav-link" href="contact.php">Contact us</a>
                 </li>
             </ul>
 
             <div>
-                <a href="apply.html" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
+                <a href="apply.php" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
             </form>
           </div>
         </div>
@@ -181,55 +181,8 @@
                 <!-- Traveller Details ends-->
 
                 <div class="py-3"></div>
-                
-                <!-- Traveller Flight Details -->
-                <div class="p-4 align-items-center rounded-3 border shadow-lg mt-5" id="travellerFlight">
-                    <div class="col p-1 pb-4 p-lg-5 py-lg-4">
-                      <h1 class="title display-5">Tourist's Flight Details</h1>
-                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mt-3">
-                          
-  
-                          <div class="col">
-                              <label for="departureDate" class="form-label fw-bold fs-6">Departure Date*</label>
-                              <input type="date" class="form-control py-3" name="departureDate" required>
-                          </div>
-  
-                          <div class="col">
-                            <label for="departingCity" class="form-label fw-bold fs-6">Departing City/Airport*</label>
-                            <select name="departingCity" class="form-select all-airports py-3" required>
-                                <optgroup label="Airport/City">
-                                    <option value="" disabled selected></option>
-                                    <!-- Options will be populated by JavaScript -->
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <div class="col">
-                            <label for="returningDate" class="form-label fw-bold fs-6">Returning Date*</label>
-                            <input type="date" class="form-control py-3" name="returningDate" required>
-                        </div>
-
-                        <div class="col">
-                            <label for="returningCity" class="form-label fw-bold fs-6">Returning City/Airport*</label>
-                            <select name="returningCity" class="form-select all-airports py-3" required>
-                                <optgroup label="Airport/City">
-                                    <option value="" disabled selected></option>
-                                    <!-- Options will be populated by JavaScript -->
-                                </optgroup>
-                            </select>
-                        </div>
-
-                      </div>
-                     
-                    </div>
-                </div>
-                <!-- Traveller Flight Details ends-->
-
-                
-                <div class="py-3"></div>
 
                 <!-- Traveller Hotel Details -->
-                
                 <div class="p-4 align-items-center rounded-3 border shadow-lg my-5" id="travellerHotel">
                     <div class="col p-1 pb-4 p-lg-5 py-lg-4">
                         <h1 class="title display-5">Tourist's Hotel Details</h1>
@@ -275,10 +228,87 @@
                     </div>
                 </div>
                 <!-- Traveller Hotel Details ends-->
+                
+                <!-- Traveller Flight Details -->
+                <div class="my-5 bg-body-secondary">
+                    <div class="p-3 py-5 p-md-5 d-flex flex-column justify-content-center align-items-center text-center">
+                        <p class="display-6 text-center fw-semibold mb-1 a-color">Do You Need A Flight Booking For Each Traveler As Well?</p>
+                        <p class="col-lg-8 text-center">Proof of flight reservation is mandatory for Schengen visa. We take care of all bookings and cancellations for your visa application needs.</p>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flightItinerary" id="flightItineraryYes" value="yes">
+                                <label class="form-check-label fw-semibold" for="flightItineraryYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flightItinerary" id="flightItineraryNo" value="no" checked>
+                                <label class="form-check-label fw-semibold" for="flightItineraryNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="py-3"></div>
+                <div class="p-4 align-items-center rounded-3 border shadow-lg mt-5" id="travellerFlight">
+                    <div class="col p-1 pb-4 p-lg-5 py-lg-4">
+                      <h1 class="title display-5">Tourist's Flight Details</h1>
+                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mt-3">
+                          
+  
+                          <div class="col">
+                              <label for="departureDate" class="form-label fw-bold fs-6">Departure Date*</label>
+                              <input type="date" class="form-control py-3" name="departureDate" required>
+                          </div>
+  
+                          <div class="col">
+                            <label for="departingCity" class="form-label fw-bold fs-6">Departing City/Airport*</label>
+                            <select name="departingCity" class="form-select all-airports py-3" required>
+                                <optgroup label="Airport/City">
+                                    <option value="" disabled selected></option>
+                                    <!-- Options will be populated by JavaScript -->
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                            <label for="returningDate" class="form-label fw-bold fs-6">Returning Date*</label>
+                            <input type="date" class="form-control py-3" name="returningDate" required>
+                        </div>
+
+                        <div class="col">
+                            <label for="returningCity" class="form-label fw-bold fs-6">Returning City/Airport*</label>
+                            <select name="returningCity" class="form-select all-airports py-3" required>
+                                <optgroup label="Airport/City">
+                                    <option value="" disabled selected></option>
+                                    <!-- Options will be populated by JavaScript -->
+                                </optgroup>
+                            </select>
+                        </div>
+
+                      </div>
+                     
+                    </div>
+                </div>
+                <!-- Traveller Flight Details ends-->
+
 
                 <!-- Traveller Insurance Details -->
+                <div class="my-5 bg-body-secondary">
+                    <div class="p-3 py-5 p-md-5 d-flex flex-column justify-content-center align-items-center text-center">
+                        <p class="display-6 text-center fw-semibold mb-1 a-color">Do You Need A Travel Medical Insurance As Well?</p>
+                        <p class="col-lg-8 text-center">Insurance is mandatory for Schengen visa. We will get you the best insurance($0 deductible, $50,000 coverage) out there for your visa application needs.</p>
+                        <div class="">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="insuranceRadio" id="insuranceRadio" value="yes">
+                                <label class="form-check-label fw-semibold" for="inlineRadio1">Yes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="insuranceRadio" id="insuranceRadio" value="no" checked>
+                                <label class="form-check-label fw-semibold" for="inlineRadio2">No</label>
+                              </div>
+                        </div>
+
+                    </div>
+                </div>
+                
                 <div class="p-4 align-items-center rounded-3 border shadow-lg my-5" id="travellerInsurance">
                     <div class="col p-1 pb-4 p-lg-5 py-lg-4">
                       <h1 class="title display-5">Tourist's Insurance Details</h1>
@@ -382,16 +412,8 @@
             <div class="my-5 bg-black text-light p-4 py-5 p-md-5 d-flex flex-column justify-content-center align-items-center text-center order-summary">
                 <p class="display-3 title">Order Summary:</p>
                 <!-- Flight Price -->
-                <div class="price d-flex align-items-center justify-content-between col-12 col-md-11 p-2 py-3" data-label="Flight Itinerary">
-                    <p class="fs-5">Flight Itinerary</p>
-                    <p class="s-color fs-4">$15.00</p>
-                </div>
                 <div class="price d-flex align-items-center justify-content-between col-12 col-md-11 p-2 py-3" data-label="Hotel Reservation">
-                    <p class="fs-5">Hotel Reservation<p>
-                    <p class="s-color fs-4">$20.00</p>
-                </div>
-                <div class="price d-flex align-items-center justify-content-between col-12 col-md-11 p-2 py-3" data-label="Hotel Reservation">
-                    <p class="fs-5">Insurance<p>
+                    <p class="fs-5">Hotel Reservation</p>
                     <p class="s-color fs-4">$20.00</p>
                 </div>
                 <!-- Total Payment -->
@@ -410,7 +432,7 @@
     <section class="consultation-service book-now py-5 d-flex flex-column justify-content-center align-items-center text-center">
         <h2 data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">Struggling with how to apply for Canada visitor visa?</h2>
         <p class="col-md-8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">Your journey begins when you book an initial consultation on our website. Our immigration consultant then helps complete your checklist for a visitor visa in Canada</p>
-        <a href="consultation.html" class="btn btn-accent p-2 px-5" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">Register Now!</a>
+        <a href="consultation.php" class="btn btn-accent p-2 px-5" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">Register Now!</a>
     </section>
     <!-- consultation-service book now ends -->
 
@@ -615,9 +637,9 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Elements
-            const hotelBookingRadios = document.querySelectorAll("input[name='hotelBooking']");
+            const flightItineraryRadios = document.querySelectorAll("input[name='flightItinerary']");
+            const flightDetailsSection = document.getElementById("travellerFlight");
             const insuranceBookingRadios = document.querySelectorAll("input[name='insuranceRadio']");
-            const hotelDetailsSection = document.getElementById("travellerHotel");
             const insuranceDetailsSection = document.getElementById("travellerInsurance");
             const orderSummary = document.querySelector(".order-summary");
     
@@ -627,11 +649,11 @@
             const insurancePrice = 20;
     
             // Initial setup - Hide hotel and insurance details if "No" is selected
-            hotelBookingRadios.forEach(radio => {
+            flightItineraryRadios.forEach(radio => {
                 if (radio.checked && radio.value === "no") {
-                    toggleVisibility(hotelDetailsSection, false);
+                    toggleVisibility(flightDetailsSection, false);
                 }
-                radio.addEventListener("change", handleHotelBookingChange);
+                radio.addEventListener("change", handleflightItineraryChange);
             });
     
             insuranceBookingRadios.forEach(radio => {
@@ -641,13 +663,13 @@
                 radio.addEventListener("change", handleInsuranceBookingChange);
             });
     
-            function handleHotelBookingChange(event) {
+            function handleflightItineraryChange(event) {
                 if (event.target.value === "yes") {
-                    toggleVisibility(hotelDetailsSection, true);
-                    addPriceToSummary("Hotel Reservation", hotelPrice);
+                    toggleVisibility(flightDetailsSection, true);
+                    addPriceToSummary("Flight Intinerary", flightPrice);
                 } else {
-                    toggleVisibility(hotelDetailsSection, false);
-                    removePriceFromSummary("Hotel Reservation");
+                    toggleVisibility(flightDetailsSection, false);
+                    removePriceFromSummary("Flight Intinerary");
                 }
                 updateTotalPrice();
             }
@@ -706,10 +728,13 @@
             }
     
             // Initial total price calculation
-            addPriceToSummary("Flight Itinerary", flightPrice); // Always add flight price at the beginning
+            addPriceToSummary("Hotel Reservation", hotelPrice); // Always add flight price at the beginning
             updateTotalPrice();
         });
         </script>
+    
+    
+    
     
 
 

@@ -9,7 +9,7 @@
     <!-- Head ends-->
 
     <body>
-        <!-- Your content here -->   
+           
         <!-- Navbar -->
         <?php include_once './include/navbar.php' ?>
         <!-- Navbar ends -->

@@ -645,6 +645,10 @@ footer .fa-youtube:hover {
   color: red;
 }
 
+footer .nav-link {
+  text-decoration: underline;
+}
+
 .address {
   margin-bottom: 10px;
 }

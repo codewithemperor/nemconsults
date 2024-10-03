@@ -12,14 +12,28 @@
             <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://wa.me/+15623891770"><i class="fa-brands fa-whatsapp"></i></a></li>                
             <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://www.youtube.com/channel/UCg-eeAYmEbCPJYdgUj3-ILg"><i class="fa-brands fa-youtube"></i></a></li>
         </ul>
-        <div class="mt-4 col-lg-5 d-none d-md-block">
-            <p class="fs-5 mb-0">OUR PORTAL</p>
-            <hr>
-            <div class="d-flex d-md-block gap-3">
-                <a class="nav-link mb-2" href="http://nemconsults.com">Nemconsults</a>
-                <a class="nav-link mb-2" href="http://nemvisas.com">Nemvisas</a>
-                <a class="nav-link mb-2" href="http://nembiz.com">Nembiz</a>
+        <div class="row">
+            <div class="mt-4 col d-md-block">
+                <p class="fs-5 mb-0">OUR PORTAL</p>
+                <hr>
+                <div class="d-flex d-md-block gap-3">
+                    <a class="nav-link mb-2" href="http://nemconsults.com">Nemconsults</a>
+                    <a class="nav-link mb-2" href="http://nemvisas.com">Nemvisas</a>
+                    <a class="nav-link mb-2" href="http://nembiz.com">Nembiz</a>
+                </div>
             </div>
+            <div class="mt-4 col d-md-block">
+                <p class="fs-5 mb-0">USEFUL LINK</p>
+                <hr>
+                <div class="d-block d-md-block gap-3">
+                    <a class="nav-link mb-2" href="../travel-reservations.php">Travel Reservation</a>
+                    <a class="nav-link mb-2" href="../study-in-canada.php">Study in Canada</a>
+                    <a class="nav-link mb-2" href="../consultation.php">Book a Consultation</a>
+                    <a class="nav-link mb-2" href="../apply.php">Apply Now</a>
+
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -35,23 +49,40 @@
             <button class="btn btn-accent" type="button">Subscribe</button>
         </div>
         </form>
-        <div class="mt-4 col-lg-5 d-md-none">
-            <p class="fs-5 mb-0">OUR PORTAL</p>
-            <hr>
-            <div class="d-flex d-md-block gap-3">
-                <a class="nav-link mb-2" href="http://nemconsults.com">Nemconsults</a>
-                <a class="nav-link mb-2" href="http://nemvisas.com">Nemvisas</a>
-                <a class="nav-link mb-2" href="http://nembiz.com">Nembiz</a>
+        <div class="row">
+            <div class="mt-4 col d-md-none">
+                <p class="fs-5 mb-0">OUR PORTAL</p>
+                <hr>
+                <div class="d-flex d-md-block gap-3">
+                    <a class="nav-link mb-2" href="http://nemconsults.com">Nemconsults</a>
+                    <a class="nav-link mb-2" href="http://nemvisas.com">Nemvisas</a>
+                    <a class="nav-link mb-2" href="http://nembiz.com">Nembiz</a>
+                </div>
             </div>
+            <div class="mt-4  d-md-none">
+                <p class="fs-5 mb-0">USEFUL LINK</p>
+                <hr>
+                <div class="d-block d-md-block gap-3">
+                    <a class="nav-link mb-2" href="../travel-reservations.php">Travel Reservation</a>
+                    <a class="nav-link mb-2" href="../study-in-canada.php">Study in Canada</a>
+                    <a class="nav-link mb-2" href="../consultation.php">Book a Consultation</a>
+                    <a class="nav-link mb-2" href="../apply.php">Apply Now</a>
+
+                </div>
+            </div>
+
         </div>
+
         <div class="mt-4 ">
             <p class="fs-5 mb-0">OUR ADDRESS</p>
             <hr>
-            <p class="address"><span>CANADA ADDRESS: </span>149D Campbell Avenue, St. John A1E 2Z7 Newfoundland Labrador</p>                
-            <p class="address"><span>USA ADDRESS 1:</span> 1209 MOUNTAIN ROAD PL NE STE N BERNALILLO COUNTY ALBUQUERQUE, NM,87110, USA</p>
+            <p class="address"><span>CANADA ADDRESS: </span>149 D Campbell Ave St. John's, NL A1E 2Z7, Canada</p>                
+            <p class="address"><span>USA ADDRESS 1:</span>1209 Mountain Rd Pl NE n Albuquerque, NM 87110,<U></U>USA</p>
             <p class="address"><span>USA ADDRESS 2: </span>444 Alaska Avenue Suite, #BXH896 Torrance, CA 90503, USA</p>
             <div class="address"><span>TELEPHONE: </span>
                 <a href="tel:+13108536599" class="nav-link d-inline-block">+13108536599</a>
+            </div>
+            <div class="address"><span>WHATSAPP: </span>
                 <a href="https://wa.me/+15623891770" class="nav-link d-inline-block ms-1">+15623891770</a>
             </div>
                     

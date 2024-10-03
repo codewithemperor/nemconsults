@@ -26,10 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $budget = $_POST['budget'];
     $sponsorName = $_POST['sponsorName'];
     $sponsorNumber = $_POST['sponsorNumber'];
-    $datapage = $_FILES['datapage'];
-    $oLevel = $_FILES['0-level'];
-    $resume = $_FILES['resume'];
-    $transcript = $_FILES['transcript'];
     $message = $_POST['textarea'];
     $fullname = $firstName . $surname;
 
@@ -41,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'server318.web-hosting.com';          // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'info@nemconsults.com';                // SMTP username
+        $mail->Username   = 'study@nemconsults.com';                // SMTP username
         $mail->Password   = 'Omolola1010@';                        // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          // Enable implicit TLS encryption
         $mail->Port       = 465;                                    // TCP port to connect to
@@ -49,12 +45,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
         // Recipients
-        $mail->setFrom('info@nemconsults.com', 'Nemconsults');
-        $mail->addAddress('info@nemconsults.com', 'Nemconsults');          // Add a recipient
+        $mail->setFrom('study@nemconsults.com', 'Nemconsults');
+        $mail->addAddress('study@nemconsults.com', 'Nemconsults');          // Add a recipient
+
+        // Attachments
+        if (isset($_FILES['datapage']) && $_FILES['datapage']['error'] == UPLOAD_ERR_OK) {
+            $mail->addAttachment($_FILES['datapage']['tmp_name'], $fullname . ' Passport Datapage.pdf');
+        }
+
+        if (isset($_FILES['o-level']) && $_FILES['o-level']['error'] == UPLOAD_ERR_OK) {
+            $mail->addAttachment($_FILES['o-level']['tmp_name'], $fullname . ' O-Level Result.pdf');
+        }
+
+        if (isset($_FILES['resume']) && $_FILES['resume']['error'] == UPLOAD_ERR_OK) {
+            $mail->addAttachment($_FILES['resume']['tmp_name'], $fullname . ' Resume.pdf');
+        }
+
+        if (isset($_FILES['transcript']) && $_FILES['transcript']['error'] == UPLOAD_ERR_OK) {
+            $mail->addAttachment($_FILES['transcript']['tmp_name'], $fullname . ' Transcript.pdf');
+        }
 
         // Content
         $mail->isHTML(true); // Set email format to HTML
-        $mail->Subject = 'New Free Counseling Enquiry from ' . $email;
+        $mail->Subject = 'New Apply Now Enquiry from ' . $email;
 
         // HTML email content
         $mail->Body = '
@@ -135,7 +148,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <img src="https://nemconsults.com/images//logo-transparent.png" alt="Company Logo"> <!-- Replace with your logo URL -->
                 </div>
                 <div class="email-content text-center">
-                    <h2 class="s-color">New Counseling Enquiry Received</h2>
+                    <h2 class="s-color">New Apply Now Enquiry Received</h2>
                     <p>You have received a new enquiry with the following details:</p>
                     <table class="custom-table">
                         <tr>
@@ -163,6 +176,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <td>'. $fullAddress. '</td>
                         </tr>
                         <tr>
+                            <th>City/Country</th>
+                            <td>'. $city. '</td>
+                        </tr>
+                        <tr>
                             <th>Preferred Destination</th>
                             <td>'. $destination. '</td>
                         </tr>
@@ -177,6 +194,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <tr>
                             <th>Funding Source</th>
                             <td>'. $funding. '</td>
+                        </tr>
+                        <tr>
+                            <th>Budget for School & Accommodation (USD)</th>
+                            <td>'. $budget. '</td>
+                        </tr>
+                        <tr>
+                            <th>Sponsor Full Name</th>
+                            <td>'. $sponsorName. '</td>
+                        </tr>
+                        <tr>
+                            <th>Sponsor Phone Number</th>
+                            <td>'. $sponsorNumber. '</td>
+                        </tr>
+                        <tr>
+                            <th>Message</th>
+                            <td>'. $message. '</td>
                         </tr>
                     </table>
                 </div>
@@ -195,7 +228,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Now configure the PHPMailer instance to send the email to the user
         $mail->clearAddresses();
         $mail->addAddress($email, $fullname);          // User's email address
-        $mail->addReplyTo('info@nemconsults.com', 'Nemconsults');
+        $mail->addReplyTo('study@nemconsults.com', 'Nemconsults');
 
         // Content
         $mail->isHTML(true); // Set email format to HTML
@@ -300,7 +333,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } ?>
 
 <!-- HTML Form -->
-<form action="" class="row g-3 mt-3" method="post">
+<form action="" class="row g-3 mt-3" method="post" enctype="multipart/form-data">
     <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
         <label for="firstName" class="form-label fw-bold fs-6">First Name*</label>
         <input type="text" class="form-control py-3" name="firstName" required>
@@ -311,7 +344,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="text" class="form-control py-3" name="surname" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
         <label for="otherName" class="form-label fw-bold fs-6">Other Name*</label>
         <input type="text" class="form-control py-3" name="otherName" required>
     </div>
@@ -321,22 +354,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="number" class="form-control py-3" name="number" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="200">
         <label for="email" class="form-label fw-bold fs-6">Email*</label>
         <input type="email" class="form-control py-3" name="email" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="200">
         <label for="dob" class="form-label fw-bold fs-6">Date of Birth*</label>
         <input type="date" class="form-control py-3" name="dob" required>
     </div>
 
-    <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
+    <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="250">
         <label for="address" class="form-label fw-bold fs-6">Full Address*</label>
         <input type="text" class="form-control py-3" name="address" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="300">
         <label for="hotelCityLocation" class="form-label fw-bold fs-6">City/Country*</label>
         <select name="city" class="form-select all-cities py-3" required>
             <optgroup label="City/Country">
@@ -346,7 +379,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="300">
         <label for="destination" class="form-label fw-bold fs-6">Preferred Destination*</label>
         <select name="destination" id="destination" class="form-select py-3" required>
             <optgroup label="Preferred">
@@ -364,7 +397,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="350">
         <label for="studyLevel" class="form-label fw-bold fs-6">Preferred Study Level*</label>
         <select name="studyLevel" id="" class="form-select py-3" required>
             <option value="" disabled selected>select option...</option>
@@ -377,14 +410,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="600">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="350">
         <label for="select-destination" class="form-label fw-bold fs-6">When do you plan to study?*</label>
         <select name="select-destination" id="select-destination" class="form-select py-3" required>
             <option value="" disabled selected>select option...</option>
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="600">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="400">
         <label for="funding" class="form-label fw-bold fs-6">How would you fund your education?*</label>
         <select name="funding" id="" class="form-select py-3" required>
             <option value="" disabled selected>select option...</option>
@@ -399,49 +432,49 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
-        <label for="budget" class="form-label fw-bold fs-6">Budget for School & Accommodation*</label>
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="400">
+        <label for="budget" class="form-label fw-bold fs-6">Budget for School & Accommodation(USD)*</label>
         <input type="number" class="form-control py-3" name="budget" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="4500">
         <label for="sponsorName" class="form-label fw-bold fs-6">Sponsor Full Name*</label>
         <input type="text" class="form-control py-3" name="sponsorName" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="450">
         <label for="sponsorNumber" class="form-label fw-bold fs-6">Sponsor Phone Number*</label>
         <input type="number" class="form-control py-3" name="sponsorNumber" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500">
         <label for="dataPage" class="form-label fw-bold fs-6">Upload Passport Datapage*</label>
-        <input type="file" class="form-control form-control-lg" name="dataPage" required>
+        <input type="file" class="form-control form-control-lg" name="dataPage" accept=".jpg, .jpeg, .png, .pdf" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500">
         <label for="o-level" class="form-label fw-bold fs-6">Upload O'Level Result*</label>
-        <input type="file" class="form-control form-control-lg" name="o-level" required>
+        <input type="file" class="form-control form-control-lg" name="o-level" accept=".jpg, .jpeg, .png, .pdf" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="550">
         <label for="resume" class="form-label fw-bold fs-6">Upload CV/Resume*</label>
-        <input type="file" class="form-control form-control-lg" name="resume" required>
+        <input type="file" class="form-control form-control-lg" name="resume" accept=".jpg, .jpeg, .png, .pdf" required>
     </div> 
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="550">
         <label for="transcript" class="form-label fw-bold fs-6">Upload Transcript*</label>
-        <input type="file" class="form-control form-control-lg" name="transcript" required>
+        <input type="file" class="form-control form-control-lg" name="transcript" accept=".jpg, .jpeg, .png, .pdf" required>
     </div>
 
                         
 
-    <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="600">
         <label for="textarea" class="form-label fw-bold fs-6">Your Message*</label>
         <textarea name="textarea" class="form-control" rows="6"></textarea>
     </div>
                         
-    <div class="col" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="300">
+    <div class="col" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="600">
         <input type="submit" value="Send Message" class="btn btn-accent px-5 py-3 mt-2">
     </div>
 </form>

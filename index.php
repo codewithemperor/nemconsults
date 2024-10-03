@@ -6,7 +6,7 @@
     <!-- Head ends-->
 
     <body>
-        <!-- Your content here -->   
+           
         <!-- Navbar -->
         <?php include_once './include/navbar.php' ?>
         <!-- Navbar ends -->
@@ -327,7 +327,7 @@
                         <p class="col-md-9 mt-3" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">Enter your details and get a free counselling session with our experts so they can connect you to the right course, country, university - and even scholarships!</p>
                     </div>
 
-                   c
+                    <?php include './include/free-counseling.php' ?>
 
                 </div>
                 <div class="col-md-4 col-lg-4 d-flex justify-content-center object-fit-cover overflow-hidden p-0 mt-2 mt-md-0" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">

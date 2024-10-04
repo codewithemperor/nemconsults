@@ -28,6 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $smtp_pass = getenv('SMTP_PASS');
         $smtp_host = getenv('SMTP_HOST');
 
+        if (!$smtp_user || !$smtp_pass) {
+            die('SMTP credentials not set.');
+        }
+
         $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = $smtp_host;          // Set the SMTP server to send through

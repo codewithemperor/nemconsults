@@ -1,0 +1,4 @@
+SetEnv SMTP_USER "info@nemconsults.com"
+SetEnv SMTP_PASS "Omolola1010@"
+SetEnv SMTP_HOST "server318.web-hosting.com"
+

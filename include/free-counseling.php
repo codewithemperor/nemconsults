@@ -26,12 +26,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     try {
         // Server settings
+        $smtp_user = getenv('SMTP_USER');
+        $smtp_pass = getenv('SMTP_PASS');
+        $smtp_host = getenv('SMTP_HOST');
+
         $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
-        $mail->Host       = 'server318.web-hosting.com';          // Set the SMTP server to send through
+        $mail->Host       = $smtp_host;          // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'info@nemconsults.com';                // SMTP username
-        $mail->Password   = 'Omolola1010@';                        // SMTP password
+        $mail->Username   = $smtp_user;                // SMTP username
+        $mail->Password   = $smtp_pass;                        // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          // Enable implicit TLS encryption
         $mail->Port       = 465;                                    // TCP port to connect to
         $mail->SMTPDebug = 0; // Disable debugging output

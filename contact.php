@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->Password   = $smtp_pass;                        // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          // Enable implicit TLS encryption
         $mail->Port       = 465;                                    // TCP port to connect to
-        $mail->SMTPDebug = 0; // Disable debugging output
+        // $mail->SMTPDebug = 0; // Disable debugging output
 
 
         // Recipients

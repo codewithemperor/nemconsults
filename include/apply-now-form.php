@@ -53,8 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->addAddress('study@nemconsults.com', 'Nemconsults');          // Add a recipient
 
         // Attachments
-        if (isset($_FILES['datapage']) && $_FILES['datapage']['error'] == UPLOAD_ERR_OK) {
-            $mail->addAttachment($_FILES['datapage']['tmp_name'], $fullname . ' Passport Datapage.pdf');
+        if (isset($_FILES['dataPage']) && $_FILES['dataPage']['error'] == UPLOAD_ERR_OK) {
+            $mail->addAttachment($_FILES['dataPage']['tmp_name'], $fullname . ' Passport Datapage.pdf');
         }
 
         if (isset($_FILES['o-level']) && $_FILES['o-level']['error'] == UPLOAD_ERR_OK) {

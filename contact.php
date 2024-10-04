@@ -35,9 +35,7 @@
                 
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="col-lg-8 col-md-10">    
-                    <?php if (!empty($alertMessage)) {
-                            echo '<div id="alert-section">' . $alertMessage . '</div>';
-                        } ?>
+                    
                          <?php include './include/contact-us-form.php' ?>
                     </div>
                     <div class="d-none col-md-4 col-lg-4 d-lg-flex justify-content-center object-fit-cover overflow-hidden p-0 mt-2 mt-md-0" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">

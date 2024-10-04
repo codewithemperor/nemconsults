@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sponsorName = $_POST['sponsorName'];
     $sponsorNumber = $_POST['sponsorNumber'];
     $message = $_POST['textarea'];
-    $fullname = $firstName . $surname;
+    $fullname = $firstName . ' ' . $surname;
 
     $mail = new PHPMailer(true);
 
@@ -231,6 +231,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // Now configure the PHPMailer instance to send the email to the user
         $mail->clearAddresses();
+        $mail->clearAttachments();
         $mail->addAddress($email, $fullname);          // User's email address
         $mail->addReplyTo('study@nemconsults.com', 'Nemconsults');
 

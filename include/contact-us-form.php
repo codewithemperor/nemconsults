@@ -269,6 +269,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+<?php if (!empty($alertMessage)) {
+    echo '<div id="alert-section">' . $alertMessage . '</div>';
+} ?>
+
+
 <form action="" method="post" class="row g-3 mt-3">
     <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
         <label for="firstName" class="form-label fw-bold fs-6">First Name*</label>

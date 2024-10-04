@@ -81,7 +81,7 @@
         <!-- Our Service ends -->
 
         <!-- Pricing  -->
-        <div class="pricing p-3 p-md-5" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="50">
+        <div class="pricing p-3 p-md-5" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="50" id="pricing">
             <div class="d-flex justify-content-center">
                 <h1 class="title display-5 my-3 mb-5" data-aos="flip-up" data-aos-duration="500" data-aos-delay="50">Product Pricing</h1>
             </div>

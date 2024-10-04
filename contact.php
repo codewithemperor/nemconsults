@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 
 
 // Load Composer's autoloader
-require './include/vendor/autoload.php';
+require 'vendor/autoload.php';
 
 // Handle the form submission logic
 $alertMessage = '';

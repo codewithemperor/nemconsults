@@ -25,7 +25,7 @@
                 </div>
             </div>
         
-            <div class="banner-form-overlay container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+            <div class="banner-form-overlay d-none container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                 <div class="card">
                     <div class="card-body">
                         <form action="" method="post">

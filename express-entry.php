@@ -32,7 +32,7 @@
                     <p class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="250">The first step is to assess your eligibility to one of the three Express Entry programs described below. Once you enter the EE pool, you will be assigned a number of points based on your age, education, work experience, education, and more. Every 2 or 3 weeks, Immigration will have a round of invitation that will select the profiles that are on the top of the ranking to apply for Permanent Residency. According to a recent Express Entry draw, a strong profile will have more than 450 points.</p>
                 </div>
                 <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
-                    <img class="rounded-lg-3" src="images/canada-visitor-visa.jpg" alt="" width="720">
+                    <img class="rounded-lg-3" src="images/express-entry.jpg" alt="" width="720">
                 </div>
                 </div>
             </div>

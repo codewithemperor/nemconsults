@@ -32,7 +32,7 @@
                     <p class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="250">Newfoundland Education and Management Consulting Limited specializes in Express Entry and Provincial Nominee program (PNP) applications.</p>
                 </div>
                 <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
-                    <img class="rounded-lg-3" src="images/canada-visitor-visa.jpg" alt="" width="720">
+                    <img class="rounded-lg-3" src="images/immigrate-canada.jpg" alt="" width="720">
                 </div>
                 </div>
             </div>

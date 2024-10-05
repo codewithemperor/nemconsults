@@ -38,7 +38,7 @@
                     <p class="lead" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">There are many advantages of applying for Permanent Residency through the AIP, like lower language proficiency, no age restrictions and the option to apply for a temporary work permit if you are currently living outside Canada. You could also apply for an open work permit for spouse.</p>
                 </div>
                 <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg" data-aos="fade-left" data-aos-duration="500" data-aos-delay="550">
-                    <img class="rounded-lg-3" src="images/canada-visitor-visa.jpg" alt="" width="720">
+                    <img class="rounded-lg-3" src="images/atlantic.jpg" alt="" width="720">
                 </div>
                 </div>
             </div>

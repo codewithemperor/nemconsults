@@ -19,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $dob = $_POST['dob'];
     $fullAddress = $_POST['address'];
     $city = $_POST['city'];
+    $country = $_POST['country'];
     $destination = $_POST['destination'];
     $studyLevel = $_POST['studyLevel'];
     $planToStudy = $_POST['select-destination'];
@@ -180,8 +181,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <td>'. $fullAddress. '</td>
                         </tr>
                         <tr>
-                            <th>City/Country</th>
+                            <th>City</th>
                             <td>'. $city. '</td>
+                        </tr>
+                        <tr>
+                            <th>Country</th>
+                            <td>'. $country. '</td>
                         </tr>
                         <tr>
                             <th>Preferred Destination</th>
@@ -339,52 +344,57 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <!-- HTML Form -->
 <form action="" class="row g-3 mt-3" method="post" enctype="multipart/form-data">
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="firstName" class="form-label fw-bold fs-6">First Name*</label>
         <input type="text" class="form-control py-3" name="firstName" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="surname" class="form-label fw-bold fs-6">Surname*</label>
         <input type="text" class="form-control py-3" name="surname" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="otherName" class="form-label fw-bold fs-6">Other Name*</label>
         <input type="text" class="form-control py-3" name="otherName" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="number" class="form-label fw-bold fs-6">Phone Number*</label>
         <input type="number" class="form-control py-3" name="number" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="200">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="email" class="form-label fw-bold fs-6">Email*</label>
         <input type="email" class="form-control py-3" name="email" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="200">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="dob" class="form-label fw-bold fs-6">Date of Birth*</label>
         <input type="date" class="form-control py-3" name="dob" required>
     </div>
 
-    <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="250">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="address" class="form-label fw-bold fs-6">Full Address*</label>
         <input type="text" class="form-control py-3" name="address" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="300">
-        <label for="hotelCityLocation" class="form-label fw-bold fs-6">City/Country*</label>
-        <select name="city" class="form-select all-cities py-3" required>
-            <optgroup label="City/Country">
-                <option value="" disabled selected>Please wait, loading...</option> 
-                <!-- Options will be populated by JavaScript -->
-            </optgroup>
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
+        <label for="city" class="form-label fw-bold fs-6">City*</label>
+        <input type="text" class="form-control py-3" name="city" required>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
+        <label for="country" class="form-label fw-bold fs-6">Country*</label>
+        <select name="country" class="form-select py-3 destination" required>
+                <optgroup label="All Countries" class="all-countries">
+                    <!-- Countries will be populated here by JavaScript -->
+                </optgroup>
+            </select>
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="300">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="destination" class="form-label fw-bold fs-6">Preferred Destination*</label>
         <select name="destination" id="destination" class="form-select py-3" required>
             <optgroup label="Preferred">
@@ -402,7 +412,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="350">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="studyLevel" class="form-label fw-bold fs-6">Preferred Study Level*</label>
         <select name="studyLevel" id="" class="form-select py-3" required>
             <option value="" disabled selected>select option...</option>
@@ -415,14 +425,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="350">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="select-destination" class="form-label fw-bold fs-6">When do you plan to study?*</label>
         <select name="select-destination" id="select-destination" class="form-select py-3" required>
             <option value="" disabled selected>select option...</option>
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="400">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="funding" class="form-label fw-bold fs-6">How would you fund your education?*</label>
         <select name="funding" id="" class="form-select py-3" required>
             <option value="" disabled selected>select option...</option>
@@ -437,7 +447,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </select>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="400">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="budget" class="form-label fw-bold fs-6">Budget for School & Accommodation(USD)*</label>
         <input type="number" class="form-control py-3" name="budget" required>
     </div>
@@ -447,39 +457,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="text" class="form-control py-3" name="sponsorName" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="450">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="sponsorNumber" class="form-label fw-bold fs-6">Sponsor Phone Number*</label>
         <input type="number" class="form-control py-3" name="sponsorNumber" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="dataPage" class="form-label fw-bold fs-6">Upload Passport Datapage*</label>
         <input type="file" class="form-control form-control-lg" name="dataPage" accept=".jpg, .jpeg, .png, .pdf" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="o-level" class="form-label fw-bold fs-6">Upload O'Level Result*</label>
         <input type="file" class="form-control form-control-lg" name="o-level" accept=".jpg, .jpeg, .png, .pdf" required>
     </div>
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="550">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="resume" class="form-label fw-bold fs-6">Upload CV/Resume*</label>
         <input type="file" class="form-control form-control-lg" name="resume" accept=".jpg, .jpeg, .png, .pdf" required>
     </div> 
 
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="550">
+    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="transcript" class="form-label fw-bold fs-6">Upload Transcript*</label>
         <input type="file" class="form-control form-control-lg" name="transcript" accept=".jpg, .jpeg, .png, .pdf" required>
     </div>
 
                         
 
-    <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="600">
+    <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" >
         <label for="textarea" class="form-label fw-bold fs-6">Your Message*</label>
         <textarea name="textarea" class="form-control" rows="6"></textarea>
     </div>
                         
-    <div class="col" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="600">
+    <div class="col" data-aos="fade-down-left" data-aos-duration="500" >
         <input type="submit" value="Send Message" class="btn btn-accent px-5 py-3 mt-2">
     </div>
 </form>

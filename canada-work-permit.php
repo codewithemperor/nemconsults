@@ -40,7 +40,7 @@
                 </div>
               </div>
               <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
-                  <img class="rounded-lg-3" src="images/canada-visitor-visa.jpg" alt="" width="720">
+                  <img class="rounded-lg-3" src="images/canada-work-visa.jpg" alt="" width="720">
               </div>
             </div>
           </div>

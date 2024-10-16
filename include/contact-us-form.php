@@ -14,6 +14,7 @@ error_reporting(E_ALL);
 // Handle the form submission logic
 $alertMessage = '';
 
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Collect form inputs and sanitize them
     $firstName = htmlspecialchars(trim($_POST['firstName']), ENT_QUOTES, 'UTF-8');
@@ -129,6 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
+
 ?>
 
 <!-- Display the alert message in the form -->
@@ -162,13 +164,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     <!-- Google reCAPTCHA widget -->
     <div class="col-12" >
-        <div class="g-recaptcha" data-sitekey="6LfqcGMqAAAAACm7GV-MTZDS0HtTNFHvgP-OjiwB"></div>
+        <input type="hidden" id="recaptchaToken" name="g-recaptcha-response">
     </div>
 
     <div class="col">
-        <input type="submit" value="Send Message" class="btn btn-accent px-5 py-3 mt-2">
+        <button onclick="onClick(event)" class="btn btn-accent px-5 py-3 mt-2">Send Message</button>
     </div>
 </form>
-
-<!-- Add the reCAPTCHA script -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>

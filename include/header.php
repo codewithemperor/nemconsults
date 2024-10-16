@@ -32,4 +32,7 @@
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfqcGMqAAAAACm7GV-MTZDS0HtTNFHvgP-OjiwB"></script>
+
 </head>

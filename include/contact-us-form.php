@@ -96,114 +96,116 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Email content for the company
             $mail->isHTML(true);
             $mail->Subject = 'New Contact us Message from ' . $fullname;
-            $mail->Body = "
-            <html>
-            <head>
-                <meta charset='UTF-8'>
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                <style>
-                    *{
-                        box-sizing: border-box;
-                    }
-                    body {
-                        font-family: Arial, sans-serif;
-                        background-color: #afeaae;
-                        margin: 0;
-                        padding: 30px 0;
-                    }
-                    .container {
-                        max-width: 600px;
-                        margin: 0 auto;
-                        background-color: #fff;
-                        padding: 20px;
-                        border-radius: 10px;
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                    }
-                    .email-header {
-                        text-align: center;
-                        padding-bottom: 20px;
-                        border-bottom: 1px solid #ddd;
-                    }
-                    .email-header img {
-                        max-width: 250px;
-                    }
-                    .email-content {
-                        padding: 20px 0;
-                    }
-                    .email-content h2 {
-                        color: #32cd30;
-                    }
-                    .email-content p {
-                        line-height: 1.6;
-                        font-size: 16px;
-                        color: #555;
-                    }
-                    .email-content b {
-                        color: #333;
-                    }
-                    .email-footer {
-                        text-align: center;
-                        font-size: 12px;
-                        color: #aaa;
-                        border-top: 1px solid #ddd;
-                        padding-top: 10px;
-                        margin-top: 20px;
-                    }
-                    .custom-table {
-                        border-collapse: collapse;
-                        width: 100%;
-                    }
+            $mail->Body = '
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <style>
+                        *{
+                            box-sizing: border-box;
+                        }
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #afeaae;
+                            margin: 0;
+                            padding: 30px 0;
+                        }
+                        .container {
+                            max-width: 600px;
+                            margin: 0 auto;
+                            background-color: #fff;
+                            padding: 20px;
+                            border-radius: 10px;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        }
+                        .email-header {
+                            text-align: center;
+                            padding-bottom: 20px;
+                            border-bottom: 1px solid #ddd;
+                        }
+                        .email-header img {
+                            max-width: 250px;
+                        }
+                        .email-content {
+                            padding: 20px 0;
+                        }
+                        .email-content h2 {
+                            color: #32cd30;
+                        }
+                        .email-content p {
+                            line-height: 1.6;
+                            font-size: 16px;
+                            color: #555;
+                        }
+                        .email-content b {
+                            color: #333;
+                        }
+                        .email-footer {
+                            text-align: center;
+                            font-size: 12px;
+                            color: #aaa;
+                            border-top: 1px solid #ddd;
+                            padding-top: 10px;
+                            margin-top: 20px;
+                        }
+                        .custom-table {
+                            border-collapse: collapse;
+                            width: 100%;
+                        }
 
-                    .custom-table th, .custom-table td {
-                        border: 1px solid #000; 
-                        padding: 8px; 
-                        text-align: left; 
-                    }
+                        .custom-table th, .custom-table td {
+                            border: 1px solid #000; 
+                            padding: 8px; 
+                            text-align: left; 
+                        }
 
-                    .custom-table th {
-                        background-color: #d4edda; 
-                        font-weight: bold; 
-                    }
+                        .custom-table th {
+                            background-color: #d4edda; 
+                            font-weight: bold; 
+                        }
 
-                </style>
-            </head>
-            <body>
-                <div class='container p-3'>
-                    <div class='email-header'>
-                        <img src='https://nemconsults.com/images//logo-transparent.png' alt='Company Logo'>
+                    </style>
+                </head>
+
+                <body>
+                    <div class="container p-3">
+                        <div class="email-header">
+                            <img src="https://nemconsults.com/images//logo-transparent.png" alt="Company Logo"> <!-- Replace with your logo URL -->
+                        </div>
+                        <div class="email-content text-center">
+                            <h2 class="s-color">New Counseling Enquiry Received</h2>
+                            <p>You have received a new enquiry with the following details:</p>
+                            <table class="custom-table">
+                                <tr>
+                                    <th>First Name</th>
+                                    <td>'. $firstName. '</td>
+                                </tr>
+                                <tr>
+                                    <th>Surname</th>
+                                    <td>'. $surname. '</td>
+                                </tr>
+                                <tr>
+                                    <th>Phone Number</th>
+                                    <td>'. $phoneNumber. '</td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th>
+                                    <td>'. $email. '</td>
+                                </tr>
+                                <tr>
+                                    <th>Preferred Destination</th>
+                                    <td>'. $message. '</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="email-footer">
+                            &copy; ' . date('Y') . ' Nemconsults. All rights reserved.
+                        </div>
                     </div>
-                    <div class='email-content text-center'>
-                        <h2 class='s-color'>New Counseling Enquiry Received</h2>
-                        <p>You have received a new enquiry with the following details:</p>
-                        <table class='custom-table'>
-                            <tr>
-                                <th>First Name</th>
-                                <td>'. $firstName. '</td>
-                            </tr>
-                            <tr>
-                                <th>Surname</th>
-                                <td>'. $surname. '</td>
-                            </tr>
-                            <tr>
-                                <th>Phone Number</th>
-                                <td>'. $phoneNumber. '</td>
-                            </tr>
-                            <tr>
-                                <th>Email</th>
-                                <td>'. $email. '</td>
-                            </tr>
-                            <tr>
-                                <th>Message</th>
-                                <td>'. $message. '</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class='email-footer'>
-                        &copy; ' . date('Y') . ' Nemconsults. All rights reserved.
-                    </div>
-                </div>
-            </body>
-            </html>";
+                </body>
+                </html>
+                ';
+
 
             $mail->AltBody = 'New message from ' . $fullname . ' - Message: ' . $message;
             $mail->send();

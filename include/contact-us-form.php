@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-<form action="" method="post" class="row g-3 mt-3" data-aos="zoom-out-down" data-aos-duration="500">
+<form action="" method="post" class="row g-3 mt-3" id="contact-form" data-aos="zoom-out-down" data-aos-duration="500">
     <div class="col-md-6" >
         <label for="firstName" class="form-label fw-bold fs-6">First Name*</label>
         <input type="text" class="form-control py-3" name="firstName" required>

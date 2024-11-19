@@ -1,4 +1,0 @@
-SetEnv SMTP_USER "info@nemconsults.com"
-SetEnv SMTP_PASS "Vission@2024"
-SetEnv SMTP_HOST "server318.web-hosting.com"
-

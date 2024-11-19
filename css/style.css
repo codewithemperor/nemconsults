@@ -150,6 +150,8 @@ input {
     color: var(--dark);
   }
 
+
+
   .bg-black .title {
     color: var(--light);
   }
@@ -171,7 +173,8 @@ input {
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
-}
+  }
+
 
 .font-secondary {
   font-family: var(--sFont);
@@ -414,7 +417,7 @@ input {
     margin-top: 20px;
   }
 
-  .card-body .card-title {
+  .why .card-body .card-title {
     font-family: var(--sFont);
     font-weight: 700;
     font-size: 24px;
@@ -702,4 +705,116 @@ footer .nav-link {
 
 .select2.select2-container {
   width: 100% !important;
+}
+
+/* Blog */
+.blog {
+  padding: 4rem 3rem;
+}
+
+.blog .card {
+  border-color: var(--aColor);
+}
+
+.blog .card-title {
+  color: var(--aColor);
+  font-family: var(--Font);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.blog .paragraph p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+
+
+
+
+.th-ani {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.th-ani:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.global-img {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.global-img:after {
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  height: 0;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.global-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-transition: 1.3s all ease;
+  transition: 1.3s all ease;
+}
+.global-img:hover:after {
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.global-img:hover img {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/bg-pattern.png);
+}
+
+.login-wrap {
+  border: 1px solid #ebebeb;
+  padding: 70px 40px;
+  min-width: 30vw;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+@media only screen and (max-width:767px) {
+  .login-wrap {
+  padding: 30px 50px 20px;
+}
+}.login-wrap form .form-group {
+  margin-bottom: 30px;
+}
+.login-wrap form .remember {
+  display: block;
+}
+.login-wrap form .custom-btn {
+  border: none;
+  margin: 20px 0 10px;
+  padding: 9px 30px;
+  border: 2px solid #ffb200;
+}
+.login-wrap form .custom-btn:hover {
+  border: 2px solid #4f2730;
 }

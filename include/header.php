@@ -34,5 +34,8 @@
     <link href="css/responsive.css" rel="stylesheet">
 
     <script src="https://www.google.com/recaptcha/api.js?render=6LfqcGMqAAAAACm7GV-MTZDS0HtTNFHvgP-OjiwB"></script>
+    <style>
+        strong {font-weight: 700;}
+    </style>
 
 </head>

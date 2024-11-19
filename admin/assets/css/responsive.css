@@ -1,0 +1,67 @@
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  body{
+    position: relative;
+  }
+
+  .login-logo img {
+    width: 50%;
+    height: auto;
+  }
+
+  #sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-280px);
+    -webkit-transform: translateX(-280px);
+    -moz-transform: translateX(-280px);
+    -ms-transform: translateX(-280px);
+    -o-transform: translateX(-280px);
+}
+
+  #sidebar.show{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  #content {
+    width: 100%;
+  }
+
+  .desc {
+    min-width: 350px;
+  }
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #sidebar{
+    width: 240px;
+  }
+
+  #content {
+    width: calc(100% - 240px);
+  }
+
+  .desc {
+    min-width: 500px;
+  }
+
+}
+
+/* Small Desktop and Laptop Styles */
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+  
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1280px) {
+
+}

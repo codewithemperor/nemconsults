@@ -49,6 +49,11 @@
             <li class="nav-item pe-lg-2">
                 <a class="nav-link" href="travel-reservations.php">Travel Reservations</a>
             </li>
+
+            <li class="nav-item pe-lg-2">
+              <a href="blogs.php" class="nav-link">Blogs</a>
+            </li>
+
             <li class="nav-item pe-lg-2">
                 <a class="nav-link" href="about.php">About us</a>
             </li>
@@ -59,7 +64,6 @@
 
         <div>
             <a href="apply.php" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Register Now!</a>
-        </form>
       </div>
     </div>
 </nav>

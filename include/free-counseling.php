@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Validate reCAPTCHA
-    $recaptchaSecret = '6LfqcGMqAAAAACuy-V7fM59j_l2oA5AwoTu-_kTG';  // Your secret key
+    $recaptchaSecret = getenv('SMTP_SECRET_KEY');  // Your secret key
     $recaptchaResponse = $_POST['g-recaptcha-response']; // Get reCAPTCHA response from the form
 
     // Verify the reCAPTCHA response with Google's API

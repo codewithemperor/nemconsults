@@ -3,7 +3,7 @@
 
     <!-- Head -->
     <?php
-    $pageTitle = "Nemconsults - Study in United States";
+    $pageTitle = "Nemconsults - Canada Work Permit";
     require_once './include/header.php';
     ?>
     <!-- Head ends-->

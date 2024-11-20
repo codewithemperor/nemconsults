@@ -30,7 +30,7 @@
                     <a class="nav-link mb-2" href="../study-in-canada.php">Study in Canada</a>
                     <a class="nav-link mb-2" href="../consultation.php">Book a Consultation</a>
                     <a class="nav-link mb-2" href="../apply.php">Apply Now</a>
-
+                    <a class="nav-link mb-2" href="../blog.php">Our Blog</a>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                     <a class="nav-link mb-2" href="../study-in-canada.php">Study in Canada</a>
                     <a class="nav-link mb-2" href="../consultation.php">Book a Consultation</a>
                     <a class="nav-link mb-2" href="../apply.php">Apply Now</a>
-
+                    <a class="nav-link mb-2" href="../blog.php">Our Blog</a>
                 </div>
             </div>
 

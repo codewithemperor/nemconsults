@@ -128,8 +128,8 @@
             <div class="container-fluid p-3 p-md-4 p-lg-5">
                 <div class="row">
                     <div class="col-md-8 mt-3 mt-md-0">
-                        <p class="heading-1">Add Blog</p>
-                        <p class="">Easily add new events to your charity foundation by providing details such as the event name, date, location, and description. Keep your event schedule up-to-date for better planning and engagement with your audience.</p>
+                    <p class="heading-1">Add Blog</p>
+                        <p class="">Easily add new blog posts to your charity foundation by providing details such as the blog title, publication date, author, and content. Keep your blog updated to engage your audience and share important stories and updates about your initiatives.</p>
 
                     </div>
                     <div class="col-md-4 d-flex align-items-center justify-content-md-end mt-3 mt-md-0">

@@ -310,7 +310,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $alertMessage = '<div class="alert alert-success" role="alert">Your message has been sent successfully!</div>';
             } catch (Exception $e) {
                 // Error message
-                $alertMessage = "<div class='alert alert-danger' role='alert'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</div>";
+                $alertMessage = "<div class='alert alert-danger' role='alert'>Message could not be sent. </div>";
             }
         } else {
             // echo "Error: " . $stmt->error;

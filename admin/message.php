@@ -33,7 +33,7 @@ if (!in_array($table, $allowed_tables)) {
 // Query data from the selected table
 $data = [];
 if ($table) {
-    $query = "SELECT * FROM $table"; // Query the relevant table
+    $query = "SELECT * FROM $table ORDER BY sent_date DESC"; // Query the relevant table
     $result = $conn->query($query); // Assume $db is your database connection
     if ($result) {
         $data = $result->fetch_all(MYSQLI_ASSOC); // Fetch all rows as associative arrays

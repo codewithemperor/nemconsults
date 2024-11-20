@@ -3,7 +3,51 @@
     if (isset($_GET['logout'])) {
         handleLogout();
     }
+
+    include_once '../include/db.php'; // Ensure this file contains your database connection details
+
+    // Initialize total messages variable
+    $totalMessages = 0;
+    
+    try {
+        // Query to calculate total messages
+        $query = "
+            SELECT 
+                (SELECT COUNT(*) FROM apply_now) +
+                (SELECT COUNT(*) FROM free_counselling) +
+                (SELECT COUNT(*) FROM contact) AS total_messages
+        ";
+    
+        // Execute the query
+        $result = $conn->query($query);
+    
+        if ($result) {
+            $row = $result->fetch_assoc();
+            $totalMessages = $row['total_messages'];
+        }
+    } catch (Exception $e) {
+        echo "Error: ";
+    }
+
+    // Initialize total blogs variable
+    $totalBlogs = 0;
+
+    try {
+        // Query to calculate total blogs
+        $query = "SELECT COUNT(*) AS total_blogs FROM blog";
+    
+        // Execute the query
+        $result = $conn->query($query);
+    
+        if ($result) {
+            $row = $result->fetch_assoc();
+            $totalBlogs = $row['total_blogs'];
+        }
+    } catch (Exception $e) {
+        echo "Error: ";
+    }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,8 +172,8 @@
                                     <div class="card mb-3 border-black text-center h-100">
                                         <div class="card-header bg-dark py-3"></div>
                                         <div class="card-body">
-                                            <p class="card-text">Total Event</p>
-                                            <!-- <h2 class="card-title mt-1 fw-bold"><?php echo $totalEvents; ?></h2> -->
+                                            <p class="card-text">Total Form Submitted</p>
+                                            <h2 class="card-title mt-1 fw-bold"><?php echo $totalMessages; ?></h2>
                                         </div>
                                     </div>
                                 </div>
@@ -138,8 +182,8 @@
                                     <div class="card mb-3 border-danger text-center h-100">
                                         <div class="card-header bg-danger py-3"></div>
                                         <div class="card-body">
-                                            <p class="card-text">Total Expenses</p>
-                                            <!-- <h2 class="card-title mt-1 fw-bold"><span class="naira">N</span><?php echo number_format($totalExpenses, 0, '.', ','); ?></h2> -->
+                                            <p class="card-text">Total Blogs</p>
+                                            <h2 class="card-title mt-1 fw-bold"><?php echo $totalBlogs; ?></h2>
                                         </div>
                                     </div>
                                 </div>
@@ -148,58 +192,7 @@
                     </div>
 
                 
-                    <div class="row mt-3 px-3 px-md-0 row-cols-1 ">
-                        <div class="col px-0 pe-md-1 mb-3">
-                            <div class="card border-dark px-0">
-                                <div class="card-header bg-dark py-3"></div>
-                                <div class="col px-3 my-2">
-                                    <p class="fs-3 fw-bold">List of Events</p>
-                                    <p class="mb-2">Quick view of all the Project registered in your system.</p>
-                                </div>
-                                
-                                <div class="px-md-3">
-                                <table class="table table-hover">
-                                    <thead class="table-success">
-                                        <tr>
-                                            <th class="py-3">S/N</th>
-                                            <th class="py-3">Project Name</th>
-                                            <th class="py-3">Location</th>
-                                            <th class="py-3">Budget</th>
-                                        </tr>
-                                    </thead>
-                                    <!-- <tbody>
-                                        <?php
-                                        if (!empty($randomEvents)) {
-                                            $serialNumber = 1;
-                                            foreach ($randomEvents as $event) {
-                                                $eventName = htmlspecialchars($event['eventName']);
-                                                $eventLocation = htmlspecialchars($event['eventLocation']);
-                                                $eventBudget = number_format($event['eventBudget'], 0, '.', ','); // Format budget with commas
-                                                
-                                                echo "<tr>
-                                                        <td class='py-3'>{$serialNumber}.</td>
-                                                        <td class='py-3'>{$eventName}</td>
-                                                        <td class='py-3'>{$eventLocation}</td>
-                                                        <td class='py-3'>{$eventBudget}</td>
-                                                    </tr>";
-                                                
-                                                $serialNumber++;
-                                            }
-                                        } else {
-                                            echo "<tr><td colspan='4' class='py-3'>No events found.</td></tr>";
-                                        }
-                                        ?>
-                                    </tbody> -->
-                                </table>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                       
-                        
-                    </div>
+                    
 
                 
                 </div>

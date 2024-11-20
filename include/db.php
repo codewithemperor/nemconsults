@@ -1,9 +1,8 @@
 <?php
-
 ob_start();
 
-$servername = "localhost"; 
-$username = "root"; 
+$servername = "localhost:3306"; 
+$username = "nemciewg"; 
 $password = getenv('SMTP_DB_PASS'); 
 $dbname = getenv('SMTP_DB_NAME');
 

@@ -6,8 +6,8 @@
         </div>
         <p class="mt-2 col-10">We are a renowned counselling agency dedicated to helping students navigate their education journey abroad.</p>
         <ul class="list-unstyled d-md-none d-flex">
-            <li class=""><a class="link-body-emphasis text-light fs-5" href="https://web.facebook.com/profile.php?id=61565809471461"><i class="fa-brands fa-facebook"></i></a></li>
-            <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://www.instagram.com/nemconsults/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class=""><a class="link-body-emphasis text-light fs-5" href="https://www.facebook.com/profile.php?id=61568075615468&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://www.instagram.com/nemconsult?utm_source=qr"><i class="fa-brands fa-instagram"></i></a></li>
             <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://x.com/nemconsults"><i class="fa-brands fa-twitter"></i></a></li>
             <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://wa.me/+15623891770"><i class="fa-brands fa-whatsapp"></i></a></li>                
             <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://www.youtube.com/channel/UCg-eeAYmEbCPJYdgUj3-ILg"><i class="fa-brands fa-youtube"></i></a></li>

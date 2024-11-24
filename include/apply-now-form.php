@@ -33,6 +33,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $errors = array();
 
+    if (
+        empty($firstName) || empty($surname) || empty($phoneNumber) || empty($email) ||
+        empty($dob) || empty($fullAddress) || empty($city) || empty($country) ||
+        empty($destination) || empty($studyLevel) || empty($planToStudy) || empty($funding) ||
+        empty($budget) || empty($sponsorName) || empty($sponsorNumber) || empty($message)
+    ) {
+        $errors[] = "Some fields are not filled.";
+    }
+
     // User-Agent check
     if (empty($_SERVER['HTTP_USER_AGENT']) || strlen($_SERVER['HTTP_USER_AGENT']) < 10) {
         $errors[] = "Suspicious submission detected (invalid User-Agent).";

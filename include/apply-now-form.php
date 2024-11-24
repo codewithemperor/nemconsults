@@ -554,6 +554,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <label for="textarea" class="form-label fw-bold fs-6">Your Message*</label>
         <textarea name="textarea" class="form-control" rows="6"></textarea>
     </div>
+
+    <div class="col-12" >
+        <input type="hidden" id="recaptchaToken" name="g-recaptcha-response">
+    </div>
                         
     <div class="col" data-aos="fade-down-left"  >
         <button onclick="onClick(event)" class="btn btn-accent px-5 py-3 mt-2">Send Message</button>

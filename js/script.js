@@ -6,7 +6,7 @@ function onClick(e) {
         document.getElementById('recaptchaToken').value = token;
 
         // Submit the form
-        document.getElementById("contact-form").submit();
+        document.getElementById("d-form").submit();
       });
     });
   }

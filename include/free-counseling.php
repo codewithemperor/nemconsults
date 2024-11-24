@@ -341,24 +341,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } ?>
 
 <!-- HTML Form -->
-<form action="" method="POST" class="row g-3 mt-3" id="free-counseling-form">
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="300">
+<form action="" method="POST" class="row g-3 mt-3" id="d-form" data-aos="zoom-out-down" data-aos-duration="500"  >
+    <div class="col-md-6"   >
         <label for="firstName" class="form-label fw-bold fs-6">First Name*</label>
         <input type="text" class="form-control py-3" name="firstName" required>
     </div>
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="300">
+    <div class="col-md-6"   >
         <label for="surname" class="form-label fw-bold fs-6">Surname*</label>
         <input type="text" class="form-control py-3" name="surname" required>
     </div>
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="400">
+    <div class="col-md-6"   >
         <label for="number" class="form-label fw-bold fs-6">Phone Number*</label>
         <input type="number" class="form-control py-3" name="number" required>
     </div>
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="400">
+    <div class="col-md-6"   >
         <label for="email" class="form-label fw-bold fs-6">Email*</label>
         <input type="email" class="form-control py-3" name="email" required>
     </div>
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500">
+    <div class="col-md-6"   >
         <label for="destination" class="form-label fw-bold fs-6">Preferred Destination*</label>
         <select name="destination" id="destination" class="form-select py-3" required>
             <optgroup label="Preferred">
@@ -375,7 +375,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </optgroup>
         </select>
     </div>
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500">
+    <div class="col-md-6"   >
         <label for="studyLevel" class="form-label fw-bold fs-6">Preferred Study Level*</label>
         <select name="studyLevel" class="form-select py-3" required>
             <option value="" disabled selected>select option...</option>
@@ -387,14 +387,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <option value="Vocational">Vocational</option>
         </select>
     </div>
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="600">
+    <div class="col-md-6"   >
         <label for="select-destination" class="form-label fw-bold fs-6">When do you plan to study?*</label>
         <select name="select-destination" id="select-destination" class="form-select py-3" required>
             <option value="" disabled selected>select option...</option>
             <!-- Populate options here -->
         </select>
     </div>
-    <div class="col-md-6" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="600">
+    <div class="col-md-6"   >
         <label for="funding" class="form-label fw-bold fs-6">How would you fund your education?*</label>
         <select name="funding" class="form-select py-3" required>
             <option value="" disabled selected>select option...</option>

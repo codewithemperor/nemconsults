@@ -9,8 +9,7 @@ function onClick(e) {
         document.getElementById("contact-form").submit();
       });
     });
-}
-
+  }
 // Initialize AOS
     AOS.init();
 

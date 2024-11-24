@@ -21,10 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $fullAddress = htmlspecialchars(trim($_POST['address']), ENT_QUOTES, 'UTF-8');
     $city = htmlspecialchars(trim($_POST['city']), ENT_QUOTES, 'UTF-8');
     $country = htmlspecialchars(trim($_POST['country']), ENT_QUOTES, 'UTF-8');
-    $destination = htmlspecialchars(trim($_POST['destination']), ENT_QUOTES, 'UTF-8');
-    $studyLevel = htmlspecialchars(trim($_POST['studyLevel']), ENT_QUOTES, 'UTF-8');
-    $planToStudy = htmlspecialchars(trim($_POST['select-destination']), ENT_QUOTES, 'UTF-8');
-    $funding = htmlspecialchars(trim($_POST['funding']), ENT_QUOTES, 'UTF-8');
+    $destination = htmlspecialchars(trim($_POST['destination'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $studyLevel = htmlspecialchars(trim($_POST['studyLevel'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $planToStudy = htmlspecialchars(trim($_POST['select-destination'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $funding = htmlspecialchars(trim($_POST['funding'] ?? ''), ENT_QUOTES, 'UTF-8');
     $budget = htmlspecialchars(trim($_POST['budget']), ENT_QUOTES, 'UTF-8');
     $sponsorName = htmlspecialchars(trim($_POST['sponsorName']), ENT_QUOTES, 'UTF-8');
     $sponsorNumber = filter_var(trim($_POST['sponsorNumber']), FILTER_SANITIZE_NUMBER_INT);

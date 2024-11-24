@@ -17,10 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $surname = htmlspecialchars(trim($_POST['surname']), ENT_QUOTES, 'UTF-8');
     $phoneNumber = filter_var(trim($_POST['number']), FILTER_SANITIZE_NUMBER_INT);
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
-    $destination = htmlspecialchars(trim($_POST['destination']), ENT_QUOTES, 'UTF-8');
-    $studyLevel = htmlspecialchars(trim($_POST['studyLevel']), ENT_QUOTES, 'UTF-8');
-    $planToStudy = htmlspecialchars(trim($_POST['select-destination']), ENT_QUOTES, 'UTF-8');
-    $funding = htmlspecialchars(trim($_POST['funding']), ENT_QUOTES, 'UTF-8');
+    $destination = htmlspecialchars(trim($_POST['destination'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $studyLevel = htmlspecialchars(trim($_POST['studyLevel'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $planToStudy = htmlspecialchars(trim($_POST['select-destination'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $funding = htmlspecialchars(trim($_POST['funding'] ?? ''), ENT_QUOTES, 'UTF-8');
     $sentDate = date('Y-m-d H:i:s'); // Current date and time
     $fullname = $firstName . $surname;
 

@@ -408,11 +408,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <option value="other">Other</option>
         </select>
     </div>
+    <!-- Google reCAPTCHA widget -->
     <div class="col-12" >
         <input type="hidden" id="recaptchaToken" name="g-recaptcha-response">
     </div>
-    <div class="col" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="600">
-        <button onclick="onClick(event)" class="btn btn-accent px-5 py-3 mt-2">Make Enquiry Now!</button>
+
+    <div class="col">
+        <button onclick="onClick(event)" class="btn btn-accent px-5 py-3 mt-2">Make Enquiry Now</button>
     </div>
 </form>
 

@@ -371,3 +371,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <button onclick="onClick(event)" class="btn btn-accent px-5 py-3 mt-2">Send Message</button>
     </div>
 </form>
+
+<script>
+// Scroll to the alert section after form submission to show the user the success or error message
+if (document.getElementById('alert-section')) {
+    document.getElementById('enquiry').scrollIntoView({ behavior: 'smooth' });
+}
+</script>

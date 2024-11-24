@@ -1,3 +1,16 @@
+function onClick(e) {
+    e.preventDefault();  // Prevent the default form submission behavior
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LfqcGMqAAAAACm7GV-MTZDS0HtTNFHvgP-OjiwB', {action: 'submit'}).then(function(token) {
+        // Attach the token to the form
+        document.getElementById('recaptchaToken').value = token;
+
+        // Submit the form
+        document.getElementById("contact-form").submit();
+      });
+    });
+}
+
 // Initialize AOS
     AOS.init();
 

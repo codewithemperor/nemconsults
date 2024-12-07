@@ -28,12 +28,16 @@
     <!-- AOS (Animate on Scroll) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-    
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfqcGMqAAAAACm7GV-MTZDS0HtTNFHvgP-OjiwB"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LfqcGMqAAAAACm7GV-MTZDS0HtTNFHvgP-OjiwB"></script> -->
     <style>
         strong {font-weight: 700;}
     </style>

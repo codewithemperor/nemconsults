@@ -49,7 +49,7 @@
                                             <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">Perfect for those who want to study in Canada or want to learn more about immigration programs.</li>
                                             <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">Also for those who want to learn more about immigration programs.</li>
                                         </ul>
-                                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-package="Standard Consultation" data-price="$170" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">Book now</button>
+                                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-package="Standard Consultation" data-price="170" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">Book now</button>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                         <ul class="list-unstyled mt-3 mb-4">
                                             <li data-aos="fade-left" data-aos-duration="800" data-aos-delay="700">Perfect for those who want to immigrate to Canada and need a better understanding of the process and their options.</li>
                                         </ul>
-                                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-package="Ultimate Consultation" data-price="$270" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">Book now</button>
+                                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-package="Ultimate Consultation" data-price="270" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">Book now</button>
                                     </div>
                                 </div>
                             </div>
@@ -75,20 +75,24 @@
                     <!-- Pricing  end-->
 
                     <!-- Modal -->
+                    <form action="include/consultation-payment.php" method="post" class="">
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
+
+                            
                                 
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="staticBackdropLabel">{PACKAGE NAME}</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
 
-                                <div class="modal-body">
-                                    <form action="" class="row g-3 mt-3">
+                                <div class="modal-body row g-3 mt-3">
+                                    
+                                        <input type="hidden" name="packageAmount" id="packageAmount">
                                         <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
-                                            <label for="package" class="form-label fw-bold fs-6">Package*</label>
-                                            <input type="text" class="form-control py-3" id="packageInput" name="package" value="{PACKAGE NAME}" disabled required>
+                                            <label for="packageInput" class="form-label fw-bold fs-6">Package*</label>
+                                            <input type="text" class="form-control py-3" id="packageInput" name="packageInput" readonly required>
                                         </div>
                 
                                         <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
@@ -102,8 +106,8 @@
                                         </div>
                 
                                         <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
-                                            <label for="number" class="form-label fw-bold fs-6">Phone Number*</label>
-                                            <input type="number" class="form-control py-3" name="number" required>
+                                            <label for="phoneNumber" class="form-label fw-bold fs-6">Phone Number*</label>
+                                            <input type="number" class="form-control py-3" name="phoneNumber" required>
                                         </div>
                 
                                         <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
@@ -112,8 +116,8 @@
                                         </div>
                 
                                         <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="150">
-                                            <label for="dob" class="form-label fw-bold fs-6">Appointment Date & Time*</label>
-                                            <input type="datetime-local" class="form-control py-3" name="dob" required>
+                                            <label for="appointmentDate" class="form-label fw-bold fs-6">Appointment Date & Time*</label>
+                                            <input type="datetime-local" class="form-control py-3" name="appointmentDate" required>
                                         </div>
                 
                                         <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
@@ -130,10 +134,11 @@
                                             <label for="visa-refusal" class="form-label fw-bold fs-6">Have you ever had a visa or immigration application refused by any country? If yes, please provide more information.*</label>
                                             <textarea name="visa-refusal" class="form-control" rows="4"></textarea>
                                         </div>
+
                 
                                         <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="500">
-                                            <label for="destination" class="form-label fw-bold fs-6">I would like to obtain professional advice from the RCIC with respect to one of the following options*</label>
-                                            <select name="destination" id="" class="form-select py-3" required>
+                                            <label for="visaType" class="form-label fw-bold fs-6">I would like to obtain professional advice from the RCIC with respect to one of the following options*</label>
+                                            <select name="visaType" id="" class="form-select py-3" required>
                                                 <option value="" disabled selected>select option...</option>
                                                 <option value="Tourist Visa Application">Tourist Visa Application</option>
                                                 <option value="Study Permit Application">Study Permit Application</option>
@@ -157,18 +162,18 @@
                                             <input type="checkbox" class="form-check-input" name="terms" required>
                                             <label for="terms" class="form-label fw-bold fs-6">I have read and accept the<a href="terms.txt" target="_blank" rel="noopener noreferrer"> terms and conditions</a></label>
                                         </div>
-                                    
-                                    </form>
                                 </div>
 
                                 <div class="modal-footer text-center justify-content-center">
-                                    <button type="button" id="payButton" class="btn btn-accent px-5 py-3">Pay {product price}</button>
+                                    <button type="submit" id="payButton" name="payButton" class="btn btn-accent px-5 py-3">Pay {product price}</button>
                                 </div>
-                        
+
+                                
                             </div>
                         </div>
                     </div>
-                    <!-- Modal end-->
+                    </form>
+                        <!-- Modal end-->
                 </div>
     
                 
@@ -200,10 +205,20 @@
         <!-- Custom JS -->
         <script src="js/script.js"></script>
         <script>
+            document.querySelector('form').addEventListener('submit', function (e) {
+                const termsCheckbox = document.querySelector('input[name="terms"]');
+                if (!termsCheckbox.checked) {
+                    e.preventDefault();
+                    alert("You must accept the terms and conditions before proceeding.");
+                }
+            });
+
+
             document.addEventListener('DOMContentLoaded', function () {
                 var modalTitle = document.getElementById('staticBackdropLabel');
                 var packageInput = document.getElementById('packageInput');
                 var payButton = document.getElementById('payButton');
+                var packageAmount =document.getElementById('packageAmount');
         
                 // Get all buttons that trigger the modal
                 var buttons = document.querySelectorAll('.btn-outline-primary');
@@ -216,7 +231,9 @@
                         // Update modal content
                         modalTitle.textContent = packageName;
                         packageInput.value = packageName;
-                        payButton.textContent = 'Pay ' + packagePrice;
+                        packageAmount.value = packagePrice;
+                        payButton.textContent = 'Pay $' + packagePrice;
+                        console.log(packageInput.value);
                     });
                 });
             });

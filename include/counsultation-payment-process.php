@@ -18,21 +18,8 @@
         //* check payment status
         if($_GET['status'] == 'cancelled')
         {
-            // echo 'YOu cancel the payment';
-            echo "
-            <script>
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Payment Failed',
-                    text: 'We could not process your payment. Please try again later.',
-                    confirmButtonText: 'OK'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.href = 'https://nemconsults.com/consultation.php';
-                    }
-                });
-            </script>";
-            // header('Location: ../consultation.php');
+            header("Location: ../cancelled.php");
+            exit(); 
         }
         elseif($_GET['status'] == 'successful')
         {

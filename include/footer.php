@@ -13,7 +13,7 @@
             <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://www.youtube.com/channel/UCg-eeAYmEbCPJYdgUj3-ILg"><i class="fa-brands fa-youtube"></i></a></li>
         </ul>
         <div class="row">
-            <div class="mt-4 col d-md-block">
+            <div class="mt-4 col d-none d-md-block">
                 <p class="fs-5 mb-0">OUR PORTAL</p>
                 <hr>
                 <div class="d-flex d-md-block gap-3">
@@ -22,7 +22,7 @@
                     <a class="nav-link mb-2" href="http://nembiz.com">Nembiz</a>
                 </div>
             </div>
-            <div class="mt-4 col d-md-block">
+            <div class="mt-4 col d-none d-md-block">
                 <p class="fs-5 mb-0">USEFUL LINK</p>
                 <hr>
                 <div class="d-block d-md-block gap-3">

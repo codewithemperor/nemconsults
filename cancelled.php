@@ -3,7 +3,7 @@
 
     <!-- Head -->
     <?php
-    $pageTitle = "Nemconsults - Success";
+    $pageTitle = "Nemconsults - Cancelled Payment";
     require_once './include/header.php';
     ?>
     <!-- Head ends-->

@@ -20,7 +20,7 @@
     }).then((result) => {
         if (result.isConfirmed) {
             // Redirect to index.php on confirmation
-            window.location.href = "http://localhost/nemconsults/index.php";
+            window.location.href = "https://nemconsults.com/";
         }
     });
 </script>

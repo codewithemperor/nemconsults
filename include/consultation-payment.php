@@ -21,7 +21,7 @@ if(isset($_POST['payButton']))
         'amount' => $packageAmount,
         'currency' => 'USD',
         'payment_options' => 'card',
-        'redirect_url' => 'http://localhost/nemconsults/include/counsultation-payment-process.php',
+        'redirect_url' => 'https://nemconsults.com/include/counsultation-payment-process.php',
         'customer' => [
             'email' => $email,
             'name' => $surname . ' ' . $otherName,

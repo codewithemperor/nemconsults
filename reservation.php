@@ -5,7 +5,7 @@
     <?php
 
 
-    $pageTitle = "Nemconsults - Flight Itinerary & Hotel Reservation";
+    $pageTitle = "Nemconsults - Flight Itinerary";
     require_once './include/header.php';
     ?>
     <!-- Head ends-->
@@ -145,18 +145,18 @@
                             <p class="col-lg-8 text-center">Proof of flight reservation is mandatory for Schengen visa. We take care of all bookings and cancellations for your visa application needs.</p>
                             <div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="flightItinerary" id="flightItineraryYes" value="yes" checked>
+                                    <input class="form-check-input" type="radio" name="flightItinerary" id="flightItineraryYes" value="yes">
                                     <label class="form-check-label fw-semibold" for="flightItineraryYes">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="flightItinerary" id="flightItineraryNo" value="no">
+                                    <input class="form-check-input" type="radio" name="flightItinerary" id="flightItineraryNo" value="no" checked>
                                     <label class="form-check-label fw-semibold" for="flightItineraryNo">No</label>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="p-4 align-items-center rounded-3 border shadow-lg mt-5 " id="travellerFlight">
+                    <div class="p-4 align-items-center rounded-3 border shadow-lg mt-5 d-none" id="travellerFlight">
                         <div class="col p-1 pb-4 p-lg-5 py-lg-4">
                         <h1 class="title display-5">Tourist's Flight Details</h1>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mt-3">
@@ -206,18 +206,18 @@
                             <p class="col-lg-8 text-center">Proof of accommodation is mandatory for Schengen visa. We take care of all bookings and cancellations for your visa application needs.</p>
                             <div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="hotelBooking" id="hotelBookingYes" value="yes" checked>
+                                    <input class="form-check-input" type="radio" name="hotelBooking" id="hotelBookingYes" value="yes">
                                     <label class="form-check-label fw-semibold" for="hotelBookingYes">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="hotelBooking" id="hotelBookingNo" value="no">
+                                    <input class="form-check-input" type="radio" name="hotelBooking" id="hotelBookingNo" value="no" checked>
                                     <label class="form-check-label fw-semibold" for="hotelBookingNo">No</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="p-4 align-items-center rounded-3 border shadow-lg my-5" id="travellerHotel">
+                    <div class="p-4 align-items-center rounded-3 border shadow-lg my-5 d-none" id="travellerHotel">
                         <div class="col p-1 pb-4 p-lg-5 py-lg-4">
                             <h1 class="title display-5">Tourist's Hotel Details</h1>
                             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 mt-3">

@@ -1,6 +1,10 @@
 <?php
     include_once 'db.php'; 
     require 'header.php'; 
+    require_once 'PHPMailer/src/PHPMailer.php';
+    require_once 'PHPMailer/src/SMTP.php';
+    require_once 'PHPMailer/src/Exception.php';
+
     // Import PHPMailer classes into the global namespace
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;

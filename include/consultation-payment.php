@@ -32,7 +32,7 @@ if(isset($_POST['payButton']))
     $details = htmlspecialchars($_POST['textarea']);
     $aboutUs = htmlspecialchars($_POST['about-us']);
     $gatewayType = $_POST['gatewayType'] ?? 'flutterwave'; // Default to Flutterwave
-    $packageAmountNaira = ($packageAmount * 1550);
+    $packageAmountNaira = 10;
 
     // Common metadata
     $metaData = [

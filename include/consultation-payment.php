@@ -49,6 +49,7 @@ if(isset($_POST['payButton']))
         'visaType' => $visaType,
         'details' => $details,
         'aboutUs' => $aboutUs,
+        'gatewayType' => $gatewayType,
     ];
 
     if($gatewayType === 'paystack') {

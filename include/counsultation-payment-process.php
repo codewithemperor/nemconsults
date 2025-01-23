@@ -137,12 +137,13 @@ if (isset($_GET['status'])) {
             $visaType = $metaData->visaType;
             $details = $metaData->details;
             $aboutUs = $metaData->aboutUs;
+            $gatewayType = $metaData->gatewayType;
             $paymentStatus = 'Successful';
 
             // Insert into database
             $stmt = $conn->prepare("INSERT INTO consulationPayments (package, surname, otherName, phoneNumber, email, appointmentDate, address, visaValidity, visaRefusal, visaType, details, aboutUs, amountPaid, amountToPay, paymentStatus, gateway) 
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-            $stmt->bind_param("ssssssssssssssss", $package, $surname, $otherName, $phoneNumber, $email, $appointmentDate, $address, $visaValidity, $visaRefusal, $visaType, $details, $aboutUs, $amountPaid, $amountToPay, $paymentStatus, 'paystack');
+            $stmt->bind_param("ssssssssssssssss", $package, $surname, $otherName, $phoneNumber, $email, $appointmentDate, $address, $visaValidity, $visaRefusal, $visaType, $details, $aboutUs, $amountPaid, $amountToPay, $paymentStatus, $gatewayType);
 
             if ($stmt->execute()) {
                 // Send emails (same as your existing logic)

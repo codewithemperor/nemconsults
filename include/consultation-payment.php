@@ -53,7 +53,6 @@ if(isset($_POST['payButton']))
     if($gatewayType === 'paystack') {
         // Paystack Configuration
         $secret_key = trim(getenv('PAYSTACK_SECRET_KEY'));
-        echo 'Secret Key: [' . $secret_key . ']'; // Debugging line
         
 
         // Validate secret key

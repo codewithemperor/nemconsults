@@ -158,6 +158,15 @@
                                             <input type="text" class="form-control py-3" name="about-us" required>
                                         </div>
 
+                                        <div class="col-12">
+                                        <label for="visaType" class="form-label fw-bold fs-6">Choose your preferred Payment Gateway</label>
+                                            <select name="gatewayType" class="form-select py-3" required>
+                                                <option value="paystack">Paystack</option>
+                                                <option value="flutterwave">Flutterwave</option>
+                                            </select>
+                                        </div>
+
+
                                         <div class="col-12" data-aos="zoom-out-down" data-aos-duration="500" data-aos-delay="100">
                                             <input type="checkbox" class="form-check-input" name="terms" required>
                                             <label for="terms" class="form-label fw-bold fs-6">I have read and accept the<a href="terms.txt" target="_blank" rel="noopener noreferrer"> terms and conditions</a></label>

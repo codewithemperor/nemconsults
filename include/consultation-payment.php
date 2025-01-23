@@ -32,6 +32,7 @@ if(isset($_POST['payButton']))
     $details = htmlspecialchars($_POST['textarea']);
     $aboutUs = htmlspecialchars($_POST['about-us']);
     $gatewayType = $_POST['gatewayType'] ?? 'flutterwave'; // Default to Flutterwave
+    $packageAmountNaira = ($packageAmount * 1550);
 
     // Common metadata
     $metaData = [
@@ -61,7 +62,7 @@ if(isset($_POST['payButton']))
         }
         $data = [
             'email' => $email,
-            'amount' => $packageAmount * 100, // Convert to cents
+            'amount' => $packageAmountNaira, 
             'currency' => 'NGN',
             'reference' => 'nemc_'.time(),
             'callback_url' => 'https://nemconsults.com/include/counsultation-payment-process.php',

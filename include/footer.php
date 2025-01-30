@@ -9,7 +9,7 @@
             <li class=""><a class="link-body-emphasis text-light fs-5" href="https://www.facebook.com/profile.php?id=61568075615468&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a></li>
             <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://www.instagram.com/nemconsult?utm_source=qr"><i class="fa-brands fa-instagram"></i></a></li>
             <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://x.com/nemconsults"><i class="fa-brands fa-twitter"></i></a></li>
-            <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://wa.me/+15623891770"><i class="fa-brands fa-whatsapp"></i></a></li>                
+            <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://wa.me/+12298292748 "><i class="fa-brands fa-whatsapp"></i></a></li>                
             <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://www.youtube.com/channel/UCg-eeAYmEbCPJYdgUj3-ILg"><i class="fa-brands fa-youtube"></i></a></li>
         </ul>
         <div class="row">
@@ -83,7 +83,7 @@
                 <a href="tel:+13108536599" class="nav-link d-inline-block">+13108536599</a>
             </div>
             <div class="address"><span>WHATSAPP: </span>
-                <a href="https://wa.me/+15623891770" class="nav-link d-inline-block ms-1">+15623891770</a>
+                <a href="https://wa.me/+12298292748 " class="nav-link d-inline-block ms-1">+12298292748 </a>
             </div>
                     
         </div>
@@ -95,9 +95,9 @@
             
     <ul class="list-unstyled d-none d-md-flex">
         <li class=""><a class="link-body-emphasis text-light fs-5" href="https://www.facebook.com/profile.php?id=61568075615468&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a></li>
-        <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href=https://www.instagram.com/nemconsult?utm_source=qr"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://www.instagram.com/nemconsult?utm_source=qr"><i class="fa-brands fa-instagram"></i></a></li>
         <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://x.com/nemconsults"><i class="fa-brands fa-twitter"></i></a></li>
-        <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://wa.me/+15623891770"><i class="fa-brands fa-whatsapp"></i></a></li>                
+        <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://wa.me/+12298292748 "><i class="fa-brands fa-whatsapp"></i></a></li>                
         <li class="ms-3"><a class="link-body-emphasis text-light fs-5" href="https://www.youtube.com/channel/UCg-eeAYmEbCPJYdgUj3-ILg"><i class="fa-brands fa-youtube"></i></a></li>
     </ul>
     </div>

@@ -65,8 +65,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $errors[] = "Invalid email address.";
     }
 
-    if (!preg_match('/^\d{11}$/', $phoneNumber)) {
-        $errors[] = "Invalid phone number. It should be 11 digits.";
+    if (!preg_match('/^\d{10,11}$/', $phoneNumber)) {
+        echo "Phone number should be 10 or 11 digits.";
     }
 
     if (empty($message) || strlen($message) < 10) {

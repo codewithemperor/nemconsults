@@ -1,4 +1,19 @@
 <?php 
+$envFile = __DIR__ . '/../.env';
+if (file_exists($envFile)) {
+    $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    foreach ($lines as $line) {
+        if (strpos(trim($line), '#') === 0) { // Skip comments
+            continue;
+        }
+        list($name, $value) = explode('=', $line, 2);
+        putenv(trim($name) . '=' . trim($value));
+    }
+} else {
+    die('.env file not found.');
+}
+
+$curl = curl_init();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 {
     $totalAmount = htmlspecialchars($_POST['totalAmount']);
@@ -33,96 +48,136 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $insuranceBeneficiaryRelationship = isset($_POST['insurance-beneficiary-relationship']) ? htmlspecialchars($_POST['insurance-beneficiary-relationship']) : 'null';
 
 
-
-    //* Prepare our rave request
-    $request = [
-        'tx_ref' => time(),
-        'amount' => $totalAmount,
-        'currency' => 'USD',
-        'payment_options' => 'card',
-        'redirect_url' => 'https://nemconsults.com/include/reservation-payment-process.php',
-        'customer' => [
-            'email' => $travelerDeliveryEmail,
-            'name' => $travelerFirstName . ' ' . $travelerLastName,
-            'phonenumber' => $travelerPhoneNumber,
-        ],
-        'meta' => [
-            'totalAmount' => $totalAmount,
-            'travelerFirstName' => $travelerFirstName,
-            'travelerLastName' => $travelerLastName,
-            'travelerDeliveryEmail' => $travelerDeliveryEmail,
-            'travelerPhoneNumber' => $travelerPhoneNumber,
-            'travelerPassportNumber' => $travelerPassportNumber,
-            'travelerDob' => $travelerDob,
-            'travelerCitizenshipCountry' => $travelerCitizenshipCountry,
-            'travelerGender' => $travelerGender,
-            'travelerCityResidence' => $travelerCityResidence,
-            'travelerResidenceAddress' => $travelerResidenceAddress,
-            'travelerPostalCode' => $travelerPostalCode,
-            'travelerInterviewDate' => $travelerInterviewDate,
-            'travelerCountryApplyingTo' => $travelerCountryApplyingTo,
-            'referral' => $referral,
-            'flightItinerary' => $flightItinerary,
-            'flightDepartureDate' => $flightDepartureDate,
-            'flightDepartingCity' => $flightDepartingCity,
-            'flightReturningDate' => $flightReturningDate,
-            'flightReturningCity' => $flightReturningCity,
-            'hotelBooking' => $hotelBooking,
-            'hotelCityLocation' => $hotelCityLocation,
-            'hotelCheckInDate' => $hotelCheckInDate,
-            'hotelCheckOutDate' => $hotelCheckOutDate,
-            'insuranceRadio' => $insuranceRadio,
-            'insuranceCountryTravelingFrom' => $insuranceCountryTravelingFrom,
-            'insuranceTripDateStart' => $insuranceTripDateStart,
-            'insuranceTripDateEnd' => $insuranceTripDateEnd,
-            'insuranceBeneficiaryName' => $insuranceBeneficiaryName,
-            'insuranceBeneficiaryRelationship' => $insuranceBeneficiaryRelationship,
-        ],
-        'customizations' => [
-            'title' => 'Nemconsults',
-            'description' => 'Payment for Travel Reservation',
-        ]
+    //Common metadata
+    $metaData = [
+        'totalAmount' => $totalAmount,
+        'travelerFirstName' => $travelerFirstName,
+        'travelerLastName' => $travelerLastName,
+        'travelerDeliveryEmail' => $travelerDeliveryEmail,
+        'travelerPhoneNumber' => $travelerPhoneNumber,
+        'travelerPassportNumber' => $travelerPassportNumber,
+        'travelerDob' => $travelerDob,
+        'travelerCitizenshipCountry' => $travelerCitizenshipCountry,
+        'travelerGender' => $travelerGender,
+        'travelerCityResidence' => $travelerCityResidence,
+        'travelerResidenceAddress' => $travelerResidenceAddress,
+        'travelerPostalCode' => $travelerPostalCode,
+        'travelerInterviewDate' => $travelerInterviewDate,
+        'travelerCountryApplyingTo' => $travelerCountryApplyingTo,
+        'referral' => $referral,
+        'flightItinerary' => $flightItinerary,
+        'flightDepartureDate' => $flightDepartureDate,
+        'flightDepartingCity' => $flightDepartingCity,
+        'flightReturningDate' => $flightReturningDate,
+        'flightReturningCity' => $flightReturningCity,
+        'hotelBooking' => $hotelBooking,
+        'hotelCityLocation' => $hotelCityLocation,
+        'hotelCheckInDate' => $hotelCheckInDate,
+        'hotelCheckOutDate' => $hotelCheckOutDate,
+        'insuranceRadio' => $insuranceRadio,
+        'insuranceCountryTravelingFrom' => $insuranceCountryTravelingFrom,
+        'insuranceTripDateStart' => $insuranceTripDateStart,
+        'insuranceTripDateEnd' => $insuranceTripDateEnd,
+        'insuranceBeneficiaryName' => $insuranceBeneficiaryName,
+        'insuranceBeneficiaryRelationship' => $insuranceBeneficiaryRelationship,
     ];
 
-    $secret_key = getenv('SECRET_KEY');
+    if($gatewayType === 'paystack') {
+        // Paystack Configuration
+        $secret_key = trim(getenv('PAYSTACK_SECRET_KEY'));
+        
 
-    //* Ca;; f;iterwave emdpoint
-    $curl = curl_init();
+        // Validate secret key
+        if (empty($secret_key)) {
+            die("Paystack secret key is missing. Please check your .env file.");
+        }
+        $data = [
+            'email' => $email,
+            'amount' => $packageAmountNaira * 100, 
+            'currency' => 'NGN',
+            'reference' => 'nemc_'.time(),
+            'callback_url' => 'https://nemconsults.com/include/reservation-payment-process.php',
+            'metadata' => $metaData,
+            'custom_fields' => [
+                [
+                    'display_name' => 'Nemconsults',
+                    'variable_name' => 'Payment for Travel Reservation',
+                    'value' => $surname.' '.$otherName
+                ]
+            ]
+        ];
 
-    curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://api.flutterwave.com/v3/payments',
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_ENCODING => '',
-    CURLOPT_MAXREDIRS => 10,
-    CURLOPT_TIMEOUT => 0,
-    CURLOPT_FOLLOWLOCATION => true,
-    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-    CURLOPT_CUSTOMREQUEST => 'POST',
-    CURLOPT_POSTFIELDS => json_encode($request),
-    CURLOPT_HTTPHEADER => array(
-        'Authorization: Bearer ' .$secret_key,
-        'Content-Type: application/json'
-    ),
-    ));
+        
+        curl_setopt_array($curl, [
+            CURLOPT_URL => 'https://api.paystack.co/transaction/initialize',
+            CURLOPT_HTTPHEADER => [
+                "Authorization: Bearer ".$secret_key,
+                "Content-Type: application/json"
+            ],
+            CURLOPT_POSTFIELDS => json_encode($data)
+        ]);
+    } else {
+        // Flutterwave Configuration (default)
+        $request = [
+            'tx_ref' => time(),
+            'amount' => $packageAmount,
+            'currency' => 'USD',
+            'payment_options' => 'card',
+            'redirect_url' => 'https://nemconsults.com/include/reservation-payment-process.php',
+            'customer' => [
+                'email' => $email,
+                'name' => $surname . ' ' . $otherName,
+                'phonenumber' => $phoneNumber,
+            ],
+            'meta' => $metaData,
+            'customizations' => [
+                'title' => 'Nemconsults Consultation Service',
+                'description' => 'Payment for ' . $package,
+            ]
+        ];
+
+        curl_setopt_array($curl, [
+            CURLOPT_URL => 'https://api.flutterwave.com/v3/payments',
+            CURLOPT_HTTPHEADER => [
+                'Authorization: Bearer '.getenv('FLUTTERWAVE_SECRET_KEY'),
+                'Content-Type: application/json'
+            ],
+            CURLOPT_POSTFIELDS => json_encode($request)
+        ]);
+    }
+
+    // Common cURL options
+    curl_setopt_array($curl, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'POST',
+    ]);
 
     $response = curl_exec($curl);
-
-    curl_close($curl);
-    
     $res = json_decode($response);
-    // echo '<pre>';
-    // echo json_encode($res, JSON_PRETTY_PRINT); // Convert the object back to JSON
-    // echo '</pre>';
+    
+    // Handle response
+    if($gatewayType === 'paystack') {
+        if($res->status === true) {
+            header('Location: ' . $res->data->authorization_url);
+            exit;
+        }
+    } else {
+        if($res->status === 'success') {
+            header('Location: ' . $res->data->link);
+            exit;
+        }
+    }
 
-    if($res->status == 'success')
-    {
-        $link = $res->data->link;
-        header('Location: '.$link);
-    }
-    else
-    {
-        echo 'We can not process your payment';
-    }
+    // Error handling
+    echo 'Payment processing failed: ';
+    echo '<pre>' . htmlspecialchars(print_r($res, true)) . '</pre>';
+    curl_close($curl);
+
+    
+    
 }
-
-?>

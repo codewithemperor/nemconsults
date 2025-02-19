@@ -172,7 +172,7 @@
                             <div class="card-body p-4">
                                 <i class="fa fa-certificate"></i>
                                 <p class="card-title mb-3">Accredited Partners.</p>
-                                <p class="">We have established partnerships with top universities and institutions to offer students the best opportunities and resources.</p>
+                                <p class="">We have established partnerships with top universities, institutions, company including 12Go partner, to offer students the best opportunities and resources.</p>
                             </div>
                         </div>
                     </div>

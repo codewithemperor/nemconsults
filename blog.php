@@ -2,39 +2,54 @@
 
 require_once 'include/db.php';
 
-if (isset($_GET)) {
-    // Loop through all GET parameters
+// Check for blog ID in different URL formats
+$blogId = null;
+
+// Format 1: blog.php?id=123
+if (isset($_GET['id'])) {
+    $blogId = intval($_GET['id']);
+}
+// Format 2: blog.php?blogURL=123 (used in blogs.php)
+elseif (isset($_GET)) {
+    // Loop through GET parameters to find the blog ID
     foreach ($_GET as $key => $value) {
-        // The first parameter is the blogURL (title), the second is the blogId
-        $blogURL = urldecode($key); // Decoding the URL-encoded title
-        $blogId = $value; // The blogId is the value
-
-        // Fetch the blog from the database using the blogId
-        $query = "SELECT id, blogHeading, blogParagraph, blogMessage, blogImage, created_at FROM blog WHERE id = ? LIMIT 1";
-        $stmt = $conn->prepare($query);
-        $stmt->bind_param("i", $blogId);
-        $stmt->execute();
-        $result = $stmt->get_result();
-
-        // Check if the blog exists
-        if ($result->num_rows > 0) {
-            $row = $result->fetch_assoc();
-            $blogHeading = htmlspecialchars($row['blogHeading']);
-            $blogParagraph = htmlspecialchars($row['blogParagraph']);
-            $blogMessage = $row['blogMessage'];
-            $blogImage = $row['blogImage'] ? "./images/blog/" . htmlspecialchars($row['blogImage']) : "./images/default.jpg";
-            $dateCreated = date("F d, Y h:i A", strtotime($row['created_at']));
-        } else {
-            // Handle case if the blog is not found
-            echo "<div class='alert alert-danger'>Blog not found.</div>";
-            exit;
+        // Skip known parameters that aren't blog IDs
+        if ($key !== 'id' && is_numeric($value)) {
+            $blogId = intval($value);
+            break;
         }
     }
-} else {
-    // Handle case if parameters are missing
-    echo "<div class='alert alert-danger'>Invalid blog URL.</div>";
+}
+
+// If no valid blog ID is found, redirect to blogs.php
+if (!$blogId) {
+    header("Location: blogs.php");
     exit;
 }
+
+// Fetch the blog from the database using the blogId
+$query = "SELECT id, blogHeading, blogParagraph, blogMessage, blogImage, created_at FROM blog WHERE id = ? LIMIT 1";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("i", $blogId);
+$stmt->execute();
+$result = $stmt->get_result();
+
+// Check if the blog exists
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $blogHeading = htmlspecialchars($row['blogHeading']);
+    $blogParagraph = htmlspecialchars($row['blogParagraph']);
+    $blogMessage = $row['blogMessage'];
+    $blogImage = $row['blogImage'] ? "./images/blog/" . htmlspecialchars($row['blogImage']) : "./images/default.jpg";
+    $dateCreated = date("F d, Y h:i A", strtotime($row['created_at']));
+} else {
+    // Blog not found, redirect to blogs.php
+    header("Location: blogs.php");
+    exit;
+}
+
+$stmt->close();
+$conn->close();
 ?>
 
 

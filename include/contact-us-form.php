@@ -1,12 +1,16 @@
 <?php
 include_once 'db.php'; 
 
+require __DIR__ . '/vendor/phpmailer/src/Exception.php';
+require __DIR__ . '/vendor/phpmailer/src/PHPMailer.php';
+require __DIR__ . '/vendor/phpmailer/src/SMTP.php';
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 
 // Handle the form submission logic
@@ -25,22 +29,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = array();
 
     // User-Agent check
-    if (empty($_SERVER['HTTP_USER_AGENT']) || strlen($_SERVER['HTTP_USER_AGENT']) < 10) {
-        $errors[] = "Suspicious submission detected (invalid User-Agent).";
-    }
+    // if (empty($_SERVER['HTTP_USER_AGENT']) || strlen($_SERVER['HTTP_USER_AGENT']) < 10) {
+    //     $errors[] = "Suspicious submission detected (invalid User-Agent).";
+    // }
 
-    // Validate reCAPTCHA
-    $recaptchaSecret = getenv('SMTP_SECRET_KEY');  // Your secret key
-    $recaptchaResponse = $_POST['g-recaptcha-response']; // Get reCAPTCHA response from the form
+    // // Validate reCAPTCHA
+    // $recaptchaSecret = getenv('SMTP_SECRET_KEY');  // Your secret key
+    // $recaptchaResponse = $_POST['g-recaptcha-response']; // Get reCAPTCHA response from the form
 
-    // Verify the reCAPTCHA response with Google's API
-    $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha = file_get_contents($recaptchaUrl . '?secret=' . $recaptchaSecret . '&response=' . $recaptchaResponse);
-    $recaptchaResult = json_decode($recaptcha);
+    // // Verify the reCAPTCHA response with Google's API
+    // $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
+    // $recaptcha = file_get_contents($recaptchaUrl . '?secret=' . $recaptchaSecret . '&response=' . $recaptchaResponse);
+    // $recaptchaResult = json_decode($recaptcha);
 
-    if (!$recaptchaResult->success) {
-        $errors[] = "Please complete the reCAPTCHA.";
-    }
+    // if (!$recaptchaResult->success) {
+    //     $errors[] = "Please complete the reCAPTCHA.";
+    // }
 
     // Backend validation for form inputs
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {

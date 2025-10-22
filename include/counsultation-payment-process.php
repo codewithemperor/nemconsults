@@ -1,15 +1,15 @@
 <?php
 include_once 'db.php'; 
 require 'header.php'; 
-require_once 'vendor/phpmailer/src/PHPMailer.php';
-require_once 'vendor/phpmailer/src/SMTP.php';
-require_once 'vendor/phpmailer/src/Exception.php';
+require __DIR__ . '/vendor/phpmailer/src/Exception.php';
+require __DIR__ . '/vendor/phpmailer/src/PHPMailer.php';
+require __DIR__ . '/vendor/phpmailer/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 // Determine the payment gateway
 if (isset($_GET['status'])) {

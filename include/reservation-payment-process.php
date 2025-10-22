@@ -2,9 +2,9 @@
 
 include_once 'db.php'; 
 require 'header.php'; 
-require_once 'vendor/phpmailer/src/PHPMailer.php';
-require_once 'vendor/phpmailer/src/SMTP.php';
-require_once 'vendor/phpmailer/src/Exception.php';
+require_once __DIR__ . '/vendor/phpmailer/src/PHPMailer.php';
+require_once __DIR__ . '/vendor/phpmailer/src/SMTP.php';
+require_once __DIR__ . '/vendor/phpmailer/src/Exception.php';
 
 // Import PHPMailer classes into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 if(isset($_GET['status']))
 {
